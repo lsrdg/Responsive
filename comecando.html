@@ -1,0 +1,145 @@
+---
+redirect_from: "/getting-started.html"
+navgroup: "gettingstarted"
+layout: top-level
+title: Getting Started
+heading: Getting Started
+description: An overview of Responsive, how to download and use it, basic templates and examples, and more.
+subheading: An introduction to Responsive, how to use it, with basic templates and examples.
+---
+<div class="row">
+    <nav class="col-m-3" role="complementary">
+        <h3>Começando</h3>
+        <ul class="no-bullets">
+            <li><a href="#download">Baixe o Responsive</a></li>
+            <li><a href="#html">O HTML</a></li>
+            <li><a href="#support">Suporte ao navegador</a></li>
+            <li><a href="#accessibility">Acessibilidade</a></li>
+            <li><a href="#right-to-left">Línguas da direita para a esquerda</a></li>
+        </ul>
+    </nav>
+    <div class="col-m-9">
+        <div class="alert" role="alert">
+            <h4>Atenção!</h4>
+            <p>Procurando pela documentação da versão anterior (v3)? Você encontra<a href="/v3/">aqui</a>.</p>
+        </div>
+        <section id="download">
+            <h1>Baixe o Responsive</h1>
+            <div class="row">
+                <div class="col-m-6">
+                    <p>O jeito mais simples e rápido de conseguir a Responsive baixar as versões pre-compiladas e minificadas dos nossos CSS, e JavaScript.
+		       Nenhuma documentação ou arquivos do código fonte incluídos.</p>
+                    <a href="{{site.release}}" role="button" class="download icon-left"
+                       data-ga-category="Getting Started Actions"
+                       data-ga-action="Getting Started Links"
+                       data-ga-label="Framework Download"><i class="fa fa-download"></i>Download Responsive</a>
+                    <p>
+                        Você também pode instalar o Responsive com o <a href="http://bower.io" rel="external">Bower</a>:
+                    </p>
+                    <p><code>bower install responsive</code></p>
+
+
+                </div>
+                <div class="col-m-6">
+                    <p>
+                        Se você está se sentindo mais aventurosa e quer mexer no Responsive antes de usar, você pode baixar o código completo de Sass e JavaScript direto do Github. Desse jeito, vai precisar usar o<a href="http://gulpjs.com/" rel="external">gulp.js</a> para construir.
+                    </p>
+                    <a href="{{site.sourcefiles}}" role="button" class="download icon-left"
+                       data-ga-category="Getting Started Actions"
+                       data-ga-action="Getting Started Links"
+                       data-ga-label="Source Download"><i class="fa fa-download"></i>Download Source</a>
+                </div>
+            </div>
+            <ul class="download-links">
+                <li>
+                    <a href="{{site.repo}}" data-ga-category="Getting Started Actions" data-ga-action="Getting Started Links" data-ga-label="GitHub project" rel="external">GitHub project</a>
+                </li>
+                <li>
+                    Version {{site.version}}
+                </li>
+            </ul>
+        </section>
+        <hr />
+        <section id="html">
+            <h1>Montando o seu HTML</h1>
+            <p>
+	        Dentro do arquivo em zip você encontrará também um arquivo HTML contendo o modelo padrão para incluir o Responsive em sua página.
+                <br /> Monte o seu modelo como o exemplo abaixo.
+            </p>
+            <pre class="language-markup"><code>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8" /&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+        &lt;meta name="description" content="Your Page Description." /&gt;
+        &lt;title&gt;O Título da sua página&lt;/title&gt;
+ 
+        &lt;link href="responsive.min.css" rel="stylesheet" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        O Conteúdo Do Seu Site
+    
+        &lt;!-- Scripts at the bottom for improved performance. --&gt;
+        &lt;!-- jQuery, required for all responsive plugins. --&gt;
+        &lt;script src="vendor/jquery-2.1.4.min.js"&gt;&lt;/script&gt;
+        &lt;script src="responsive.min.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        <hr />
+        <section id="support">
+            <h1>Suporte ao navegador</h1>
+            <p>
+	        Responsive é construído para funcionar melhor em navegadores mais recentes, tanto em computadores quanto em dispositivos móveis. Tudo foi construído com melhoramento progressivo em mente, o que significa que navegadores mais antigos podem mostrar componentes estilizados de forma diferente, mas ainda assim totalmente funcionais.
+            </p>
+            <h3>Navegadores suportados</h3>
+            <p>Especificamente, as versões mais recentes dos seguintes navegadores são suportadas:</p>
+
+            <ul>
+                <li>Chrome (Mac, Windows, iOS, e Android)</li>
+                <li>Internet Explorer (Windows - mais recente e IE9, IE10, WP7/8)</li>
+                <li>Firefox (Mac, Windows)</li>
+                <li>Opera (Mac, Windows)</li>
+                <li>Safari (Mac e iOS apenas, já que a versão pro Windows está sendo abandonada)</li>
+            </ul>
+
+            <h2>Safari</h2>
+            <p>
+	        Safari antes da v7.1 para OS X e Safari para iOs v8.0 não calculam percentagens de forma apropriada e vão renderizar 12 colunas individuais definidas usando as classes <code>col-{range}-1</code> levemente mais pontudas do que deveriam. Veja <a href="https://github.com/ResponsiveBP/Responsive/issues/40" rel="external">#40</a>.
+            </p>
+            <p>
+	        Infelizmente, além de atualizar o seu navegador não há muito que possa ser feito sem recorrer a remendos para dar um jeito nas percentagens usando JavaScript ou usando a classe <code>push-{range}</code> ou <code>push-{range}-only</code> para compensar a última coluna.
+            </p>
+            <h2>Internet Explorer 9</h2>
+            <p>
+	        Internet Explorer 9 não tem suporte para as <a rel="external" href="http://www.w3.org/TR/css3-transitions/">transições de CSS</a> e por isso todos os plugins que fazem uso de transições irão operar sem animações
+            </p>
+        </section>
+        <hr />
+        <section id="accessibility">
+            <h1>Acessibilidade</h1>
+            <p>
+	        Responsive é construído usando padrões comuns da rede e tem sido desenhado para suportar Tecnologia Assistiva.
+		Todas as cores foram escolhidas conforme a <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast" rel="external">proporção recomendade de 4.5:1</a>
+		para assegurar que usuários com baixa capacidade de visão ou com daltonismo sejam atendidos apropriadamente.
+            </p>
+            <p>
+	        Todos os plugins do Responsive foram construídos desde a base para garantir a acessibilidade ao mouse, toque e teclado.
+		Eles também adicionam a atribuição <a href="http://www.w3.org/TR/wai-aria/" rel="external">ARIA</a> 
+	        onde for necessário para assegurar que leitores de tela (screenreaders) possam seguir a funcionalidade de cada plugin.	
+            </p>
+        </section>
+        <hr />
+        <section id="right-to-left">
+            <h1>Línguas da direita para esquerda</h1>
+            <p>
+	        Responsive tem suporte nativo a línguas da direita-para-a-esquerda como o hebreu ou árabe.
+		Todos os aspectos da estrutura, desde a coluna de grades até o comportamento de deslocamento direcional, possuem contrapartes da 'direita-para-a-esquerda'.
+            </p>
+            <p>
+	        Para ativar o suporte a línguas da direira-para-a-esquerda adicione o atributo <code>dir="rtl"</code> para a tag <code>html</code>.
+            </p>
+        </section>
+    </div>
+</div>
