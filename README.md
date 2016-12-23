@@ -27,7 +27,7 @@ On the left, the name in English, as you can find on the original repository.
 On the right, the name in Brazilian Portuguese, as you will eventually find on this branch (`pt`).
 
 -----------------------------------------
-[ ] = todo | [.] = ongoing | [X] = done |
+[ ] = todo | [o] = ongoing | [X] = done |
 -------------------------------------------------
 - [ ] index.html		| index.html
 - [X] getting-started.html	| comecando.html
@@ -36,7 +36,7 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
     - [X] base			| base
     - [X] grid			| grade
     - [X] forms			| formularios
-    - [.] buttons		| botoes
+    - [o] buttons		| botoes
     - [ ] tables		| tabelas
     - [ ] media			| midia
     - [ ] lists			| listas
@@ -51,3 +51,12 @@ Gemfile was modified slightly modified, the original one can be found [here](htt
 
 If you already have a local copy of the `gh-pages` branch, you just substitute a
 HTML file with the translated one, downloaded from the `pt` branch.
+
+### Differences between repositories
+On this repository: 
+
+- `pt` is the master branch
+- Modified Gemfile 
+- Still with mixed filenames [!]
+
+
