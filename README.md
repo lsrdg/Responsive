@@ -7,10 +7,12 @@ The process is being splitted into three chunks:
 
 1) Raw translation
     - Literal and free translation
+    
 2) Improvement 
     - Context checking
     - Spell and grammar checking
     - Proofreading
+
 3) Adaptation to the docs format	
  	
 
@@ -22,7 +24,7 @@ Even if you don't speak Portuguese, your ideas and insights are welcomed.
 
 ### 1) Raw translation
 On the left, the name in English, as you can find on the original repository.
-On the right, the name in Brazilian Portuguese, as you will find on this branch (`pt`).
+On the right, the name in Brazilian Portuguese, as you will eventually find on this branch (`pt`).
 
 -----------------------------------------
 [ ] = todo | [.] = ongoing | [X] = done |
@@ -33,8 +35,8 @@ On the right, the name in Brazilian Portuguese, as you will find on this branch 
     - [X] index.html		| index.html
     - [X] base			| base
     - [X] grid			| grade
-    - [.] forms			| formularios
-    - [ ] buttons		| botoes
+    - [X] forms			| formularios
+    - [.] buttons		| botoes
     - [ ] tables		| tabelas
     - [ ] media			| midia
     - [ ] lists			| listas
@@ -42,3 +44,10 @@ On the right, the name in Brazilian Portuguese, as you will find on this branch 
     - [ ] code 			| codigo
 - [ ] JavaScript/		| javascript
 -------------------------------------------------
+
+### Preview with Jekyll Server
+It might be necessary to prepend `bundle exec` to preview it locally. The 
+Gemfile was modified slightly modified, the original one can be found [here](https://github.com/ResponsiveBP/Responsive/blob/gh-pages/Gemfile).
+
+If you already have a local copy of the `gh-pages` branch, you just substitute a
+HTML file with the translated one, downloaded from the `pt` branch.
