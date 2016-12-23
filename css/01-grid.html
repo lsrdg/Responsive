@@ -6,399 +6,394 @@ description: An incredible powerful responsive grid for building flexible layout
 heading: The Grid
 subheading: Flexible grid layouts across all devices.
 sublinks: ["#mediaqueries|Media Queries",
-            "#basic|Example : Basic",
-            "#nogutter|Example : No Gutter",
-            "#nested|Example : Nested",
-            "#resizing|Example : Resizing",
-            "#offsetting|Example : Offsetting",
-            "#ordering|Example : Ordering",
-            "#equal|Example : Equal Height",
-            "#block|Example : Block Grid"]
+"#basic|Example : Basic",
+"#nogutter|Example : No Gutter",
+"#nested|Example : Nested",
+"#resizing|Example : Resizing",
+"#offsetting|Example : Offsetting",
+"#ordering|Example : Ordering",
+"#equal|Example : Equal Height",
+"#block|Example : Block Grid"]
 ---
-<h1>The Grid System</h1>
+<h1>O sistema de grade</h1>
 <p>
-    Responsive comes with an incredibly flexible and powerful grid system offering, not just one
-    but <strong>5 tiers of 12 column fluid grids in two variants</strong> that allow for granular
-    control over layout across all devices. It also offers equal height columns and a self resetting block grid for equal column
-    widths again in the two variants.
+Responsive vem com um sistema de grade incrivelmente flexivel, oferecendo não apenas um
+mas <strong>5 camadas de 12 colunas fluídas em duas variações</strong> que permitem um
+controle granular das camadas através de todos os dispositivos. E também oferece colunas com altura uniforme e um bloco
+de grade que se redefine para ter colunas com larguras iguais, novamente em duas variações. 
 </p>
 <p>
-    No other grid offers the power and flexibility that is provided by the Responsive framework. The system has been
-    written from an <strong>entirely mobile first</strong> perspective with each level overwriting the previous one as the viewport width
-    scales up.
+Nenhuma outra grade oferece o poder e a flexibilidade que é provida pela estrutura (framework) do Responsive.
+O sistema foi escrito inteiramente apartir de uma perpectiva para suportar <strong>primeiro dispositivos móveis</strong> com cada nível sobreescrevendo o anterior conforme a janela de exibição for aumentando.
 </p>
 <p>
-    To prevent content hitting the side of the viewport by standard all grid rows would be wrapped in a div with the
-    class <code>.container</code>. This constrains the grid to <var>98%</var> of the viewport width up to a maximum of <var>1140px</var>.
+Para evitar que o conteudo atinja os lados da janela de exibição, por padrão todas as fileiras (rows) da grade precisam ser colocadas dentro de um div com a classe <code>.container</code>. Isso restringe a grade a <var>98%</var> da largura da janela de exibição até um máximo de <var>1140px</var>.
 </p>
 <p>
-    Full width rows should be wrapped in div with the class <code>.container-full</code>.
+Fileiras de largura intera (full width rows) precisam ser colocadas dentro de um div com a classe <code>.container-full</code>.
 </p>
 <div class="alert" role="alert">
-    <h4>Heads Up!</h4>
+    <h4>Atenção!</h4>
     <p>
-        The grid system is designed to be used as a wrapping scaffold only.
-        All custom styling should be added to elements within each column, doing otherwise could break your layout.
+    O sistema de grade é projetado para ser usado como apenas uma armação de andaimes.
+    Todo estilo personalizado deverá ser adicionado apenas aos elementos dentro de cada coluna, feito de outra forma poderia quebrar o seu layout.
     </p>
 
-    <h4>Right-to-Left Language Support</h4>
+    <h4>Suporte a sistemas de escrita da direita para a esquerda</h4>
     <p>
-        Adding the attribute <code>dir="rtl"</code> to the <code>html</code> tag will reverse the order of columns and all other
-        column overload behaviour to allow for right-to-left languages.
+    Adicionando o atributo <code>dir="rtl"</code> para a marca (tag) <code>html</code> irá reverter a ordem das colunas e de todos os comportamentos de colunas seguintes para permitir escritas da direita para a esqueda.
     </p>
 
-    <h4>Fixed Layout</h4>
+    <h4>Layout fixo</h4>
     <p>
-        To disable the default fluid grid behaviour and force the grid into a non-responsive layout do the following:
-
+    Para desativar o comportamento fluído da grade e forçar a grade à um desenho não responsável, faça o seguinte:
     </p>
     <ol>
-        <li>
-            Remove the <code>&lt;meta name="viewport" /&gt;</code> meta tag from the head of your document.
-        </li>
-        <li>
-            Add the class <code>.fixed</code> to the container.
-        </li>
-        <li>
-            Use <code>.col-xxs-{number}</code> range on the columns.
-        </li>
+	<li>
+	    Remova a meta marca (tag)<code>&lt;meta name="viewport" /&gt;</code> da cabeça (head) do seu documento.
+	</li>
+	<li>
+	    Adicione a classe <code>.fixed</code> ao container.
+	</li>
+	<li>
+	    Use a classe <code>.col-xxs-{number}</code> nas colunas.
+	</li>
     </ol>
 </div>
 <hr />
 <section id="mediaqueries">
-    <h1>Media Queries</h1>
-    <p>The media queries specifying breakpoints are as follows:</p>
+    <h1>Consultas de mídia (Media Queries)</h1>
+    <p>As consultas específicas de mídia são as seguintes:</p>
     <table class="table-list table-striped table-bordered" data-table-list="">
-        <thead>
-            <tr>
-                <th scope="col">Level</th>
-                <th>Selector</th>
-                <th>Width</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Extra, extra small (initial)</td>
-                <td><code>.col-xxs-{number}</code></td>
-                <td>Up to 37.5em <small>(600px at 16px/1em)</small></td>
-            </tr>
-            <tr>
-                <td>Extra small</td>
-                <td><code>.col-xs-{number}</code></td>
-                <td>37.5em to 48em <small>(768px at 16px/1em)</small></td>
-            </tr>
-            <tr>
-                <td>Small</td>
-                <td><code>.col-s-{number}</code></td>
-                <td>48em to 62em <small>(768px to 992px at 16px/1em)</small> </td>
-            </tr>
-            <tr>
-                <td>Medium</td>
-                <td><code>.col-m-{number}</code></td>
-                <td>62em to 75em <small>(992px to 1200px at 16px/1em)</small> </td>
-            </tr>
-            <tr>
-                <td>Large</td>
-                <td><code>.col-l-{number}</code></td>
-                <td>75em and over <small>(1200px at 16px/1em)</small> </td>
-            </tr>
-        </tbody>
+	<thead>
+	    <tr>
+		<th scope="col">Nível</th>
+		<th>Seletor</th>
+		<th>Largura</th>
+	    </tr>
+	</thead>
+	<tbody>
+	    <tr>
+		<td>Extra, extra pequeno (inicial)</td>
+		<td><code>.col-xxs-{número}</code></td>
+		<td>Até 37.5em <small>(600px em 16px/1em)</small></td>
+	    </tr>
+	    <tr>
+		<td>Extra pequeno</td>
+		<td><code>.col-xs-{número}</code></td>
+		<td>37.5em até 48em <small>(768px até 16px/1em)</small></td>
+	    </tr>
+	    <tr>
+		<td>Pequeno</td>
+		<td><code>.col-s-{número}</code></td>
+		<td>48em até 62em <small>(768px to 992px até 16px/1em)</small> </td>
+	    </tr>
+	    <tr>
+		<td>Médio</td>
+		<td><code>.col-m-{número}</code></td>
+		<td>62em até 75em <small>(992px to 1200px até 16px/1em)</small> </td>
+	    </tr>
+	    <tr>
+		<td>Largo</td>
+		    <td><code>.col-l-{número}</code></td>
+		<td>75em e acima <small>(1200px até 16px/1em)</small> </td>
+	    </tr>
+	</tbody>
     </table>
     <p>
-        Design guidelines (rendered as png's) for the default grid at maximum widths of 1140px and 970px are available for download <a href="{{ site.baseurl }}assets/responsive-grid-rulers.zip">here</a>.
+    Estão disponíveis para download diretrizes de desenhos da grade padrão (rederizadas como png's) em largura máxima de 1140px e 970px <a href="{{ site.baseurl }}assets/responsive-grid-rulers.zip">aqui</a>.
     </p>
 </section>
 <hr />
 <section id="examples">
-    <h1>Examples</h1>
+    <h1>Exemplos</h1>
     <p>
-        In the following examples the markup is rendered using the <code>.col-xxs-{number}</code> tier.
-        This is to ensure column visibility for all viewports. In your sites you can use any <code>.col-{size}-{number}</code>
-        tier to start with.
+    Nos exemplos seguintes a marcação é renderizada usando a camada <code>.col-xxs-{number}</code>.
+    Isso é para assegurar visibilidade de coluna para todas as janelas de exibição. Nos seus sites você pode usar qualquer uma das camadas <code>.col-{size}-{number}</code> como ponto de partida.
     </p>
     <section id="basic">
-        <h3>Basic</h3>
-        <p>
-            Here is a very basic example of the grid system showing all 12 columns.
-        </p>
-        <p class="clearfix">
-            <button type="button" data-modal-target="#basic-test" class="push">Click to test</button>
-        </p>
-        <div id="basic-test" class="grid-demo">
-            <div class="row">
-                <div class="col-xxs-12">
-                    12
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-11">
-                    11
-                </div>
-                <div class="col-xxs-1">
-                    1
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-10">
-                    10
-                </div>
-                <div class="col-xxs-2">
-                    2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-9">
-                    9
-                </div>
-                <div class="col-xxs-3">
-                    3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-8">
-                    8
-                </div>
-                <div class="col-xxs-4">
-                    4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-7">
-                    7
-                </div>
-                <div class="col-xxs-5">
-                    5
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-6">
-                    6
-                </div>
-                <div class="col-xxs-6">
-                    6
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-5">
-                    5
-                </div>
-                <div class="col-xxs-7">
-                    7
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-4">
-                    4
-                </div>
-                <div class="col-xxs-8">
-                    8
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-3">
-                    3
-                </div>
-                <div class="col-xxs-9">
-                    9
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-2">
-                    2
-                </div>
-                <div class="col-xxs-10">
-                    10
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-1">
-                    1
-                </div>
-                <div class="col-xxs-11">
-                    11
-                </div>
-            </div>
-        </div>
-        <pre class="language-markup"><code>&lt;div class="row"&gt;
+	<h3>Básico</h3>
+	<p>
+	Aqui está um exemplo muito simples do sistema de grades mostrando todas as 12 colunas.
+	</p>
+	<p class="clearfix">
+	<button type="button" data-modal-target="#basic-test" class="push">Clique aqui para testar</button>
+	</p>
+	<div id="basic-test" class="grid-demo">
+	    <div class="row">
+		<div class="col-xxs-12">
+		    12
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-11">
+		    11
+		</div>
+		<div class="col-xxs-1">
+		    1
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-10">
+		    10
+		</div>
+		<div class="col-xxs-2">
+		    2
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-9">
+		    9
+		</div>
+		<div class="col-xxs-3">
+		    3
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-8">
+		    8
+		</div>
+		<div class="col-xxs-4">
+		    4
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-7">
+		    7
+		</div>
+		<div class="col-xxs-5">
+		    5
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-6">
+		    6
+		</div>
+		<div class="col-xxs-6">
+		    6
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-5">
+		    5
+		</div>
+		<div class="col-xxs-7">
+		    7
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-4">
+		    4
+		</div>
+		<div class="col-xxs-8">
+		    8
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-3">
+		    3
+		</div>
+		<div class="col-xxs-9">
+		    9
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-2">
+		    2
+		</div>
+		<div class="col-xxs-10">
+		    10
+		</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-1">
+		    1
+		</div>
+		<div class="col-xxs-11">
+		    11
+		</div>
+	    </div>
+	</div>
+	<pre class="language-markup"><code>&lt;div class="row"&gt;
     &lt;div class="col-xxs-12"&gt;
-        12
+	12
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="row"&gt;
     &lt;div class="col-xxs-11"&gt;
-        11
+	11
     &lt;/div&gt;
     &lt;div class="col-xxs-1"&gt;
-        1
+	1
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </section>
     <hr />
     <section id="nogutter">
-        <h3>No Gutter</h3>
-        <p>
-            Adding the class <code>.no-gutter</code> to a row triggers the gutterless column layout.
-        </p>
-        <p class="clearfix">
-            <button type="button" data-modal-target="#nogutter-test" class="push">Click to test</button>
-        </p>
-        <div id="nogutter-test" class="grid-demo">
-            <div class="row no-gutter">
-                <div class="col-xxs-12">
-                    12
-                </div>
-            </div>
-            <div class="row no-gutter">
-                <div class="col-xxs-11">
-                    11
-                </div>
-                <div class="col-xxs-1">
-                    1
-                </div>
-            </div>
-            <div class="row no-gutter">
-                <div class="col-xxs-10">
-                    10
-                </div>
-                <div class="col-xxs-2">
-                    2
-                </div>
-            </div>
-            <div class="row no-gutter">
-                <div class="col-xxs-9">
-                    9
-                </div>
-                <div class="col-xxs-3">
-                    3
-                </div>
-            </div>
-            <div class="row no-gutter">
-                <div class="col-xxs-8">
-                    8
-                </div>
-                <div class="col-xxs-4">
-                    4
-                </div>
-            </div>
-            <div class="row no-gutter">
-                <div class="col-xxs-7">
-                    7
-                </div>
-                <div class="col-xxs-5">
-                    5
-                </div>
-            </div>
-            <div class="row no-gutter">
-                <div class="col-xxs-6">
-                    6
-                </div>
-                <div class="col-xxs-6">
-                    6
-                </div>
-            </div>
-        </div>
-        <pre class="language-markup"><code>&lt;div class="row no-gutter"&gt;
+	<h3>Sem calha (No Gutter)</h3>
+	<p>
+	Adicionando a classe <code>.no-gutter</code> a uma coluna, ativa uma coluna sem calhas, um layout sem delimitadores.
+	</p>
+	<p class="clearfix">
+	<button type="button" data-modal-target="#nogutter-test" class="push">Clique aqui para testar</button>
+	</p>
+	<div id="nogutter-test" class="grid-demo">
+	    <div class="row no-gutter">
+		<div class="col-xxs-12">
+		    12
+		</div>
+	    </div>
+	    <div class="row no-gutter">
+		<div class="col-xxs-11">
+		    11
+		</div>
+		<div class="col-xxs-1">
+		    1
+		</div>
+	    </div>
+	    <div class="row no-gutter">
+		<div class="col-xxs-10">
+		    10
+		</div>
+		<div class="col-xxs-2">
+		    2
+		</div>
+	    </div>
+	    <div class="row no-gutter">
+		<div class="col-xxs-9">
+		    9
+		</div>
+		<div class="col-xxs-3">
+		    3
+		</div>
+	    </div>
+	    <div class="row no-gutter">
+		<div class="col-xxs-8">
+		    8
+		</div>
+		<div class="col-xxs-4">
+		    4
+		</div>
+	    </div>
+	    <div class="row no-gutter">
+		<div class="col-xxs-7">
+		    7
+		</div>
+		<div class="col-xxs-5">
+		    5
+		</div>
+	    </div>
+	    <div class="row no-gutter">
+		<div class="col-xxs-6">
+		    6
+		</div>
+		<div class="col-xxs-6">
+		    6
+		</div>
+	    </div>
+	</div>
+	<pre class="language-markup"><code>&lt;div class="row no-gutter"&gt;
     &lt;div class="col-xxs-12"&gt;
-        12
+	12
     &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="row"&gt;
     &lt;div class="col-xxs-11"&gt;
-        11
+	11
     &lt;/div&gt;
     &lt;div class="col-xxs-1"&gt;
-        1
+	1
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </section>
     <hr />
     <section id="nested">
-        <h3>Nesting</h3>
-        <p>
-            By adding a new <code>.row</code> class to a div to designate a new level it is possible to nest the grid.
-        </p>
-        <p class="clearfix">
-            <button type="button" data-modal-target="#nested-test" class="push">Click to test</button>
-        </p>
-        <div id="nested-test" class="grid-demo">
-            <div class="row">
-                <div class="col-xxs-6">
-                    6
-                    <div class="row">
-                        <div class="col-xxs-6">
-                            6
-                        </div>
-                        <div class="col-xxs-6">
-                            6
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxs-6">
-                    6
-                    <div class="row">
-                        <div class="col-xxs-6">
-                            6
+	<h3>Aninhamento</h3>
+	<p>
+	Ao adicinar uma nova classe <code>.row</code> a um div, é possível designar um novo nível, e assim aninhar a grade, com colunas aninhando outras colunas.
+	</p>
+	<p class="clearfix">
+	<button type="button" data-modal-target="#nested-test" class="push">Clique aqui para testar</button>
+	</p>
+	<div id="nested-test" class="grid-demo">
+	    <div class="row">
+		<div class="col-xxs-6">
+		    6
+		    <div class="row">
+			<div class="col-xxs-6">
+			    6
+			</div>
+			<div class="col-xxs-6">
+			    6
+			</div>
+		    </div>
+		</div>
+		<div class="col-xxs-6">
+		    6
+		    <div class="row">
+			<div class="col-xxs-6">
+			    6
 
 
-                        </div>
-                        <div class="col-xxs-6">
-                            6
+			</div>
+			<div class="col-xxs-6">
+			    6
 
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <pre class="language-markup"><code>&lt;div class="row"&gt;
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<pre class="language-markup"><code>&lt;div class="row"&gt;
     &lt;div class="col-xxs-6"&gt;
-        6
-        &lt;div class="row"&gt;
-            &lt;div class="col-xxs-6"&gt;
-                6
-            &lt;/div&gt;
-            &lt;div class="col-xxs-6"&gt;
-                6
-            &lt;/div&gt;
-        &lt;/div&gt;
+	6
+	&lt;div class="row"&gt;
+	    &lt;div class="col-xxs-6"&gt;
+		6
+	    &lt;/div&gt;
+	    &lt;div class="col-xxs-6"&gt;
+		6
+	    &lt;/div&gt;
+	&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="col-xxs-6"&gt;
-        6
-        &lt;div class="row"&gt;
-            &lt;div class="col-xxs-6"&gt;
-                6
-            &lt;/div&gt;
-            &lt;div class="col-xxs-6"&gt;
-                6
-            &lt;/div&gt;
-        &lt;/div&gt;
+	6
+	&lt;div class="row"&gt;
+	    &lt;div class="col-xxs-6"&gt;
+		6
+	    &lt;/div&gt;
+	    &lt;div class="col-xxs-6"&gt;
+		6
+	    &lt;/div&gt;
+	&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </section>
     <hr />
     <section id="resizing">
-        <h3>Resizing</h3>
-        <p>In this example the grid from each tier is being overwritten as the viewport scales up.</p>
-        <p class="clearfix">
-            <button type="button" data-modal-target="#resizing-test" class="push">Click to test</button>
-        </p>
-        <div id="resizing-test" class="grid-demo">
-            <div class="row">
-                <div class="col-xxs-4 col-xs-6 col-s-4">
-                    <div class="visible-xs">6</div>
-                    <div class="hidden-xs">4</div>
-                </div>
-                <div class="col-xxs-4 col-xs-6 col-s-4">
-                    <div class="visible-xs">6</div>
-                    <div class="hidden-xs">4</div>
-                </div>
-                <div class="col-xxs-4 col-xs-12 col-s-4">
-                    <div class="visible-xs">12</div>
-                    <div class="hidden-xs">4</div>
-                </div>
-            </div>
-        </div>
-        <pre class="language-markup"><code>&lt;div class="row"&gt;
+	<h3>Redimensionando</h3>
+	<p>Neste exemplo, a grade de cada camada está sendo sobreescrevida, conforme a janela de exibição vai aumentando.</p>
+	<p class="clearfix">
+	<button type="button" data-modal-target="#resizing-test" class="push">Clique aqui para testar</button>
+	</p>
+	<div id="resizing-test" class="grid-demo">
+	    <div class="row">
+		<div class="col-xxs-4 col-xs-6 col-s-4">
+		    <div class="visible-xs">6</div>
+		    <div class="hidden-xs">4</div>
+		</div>
+		<div class="col-xxs-4 col-xs-6 col-s-4">
+		    <div class="visible-xs">6</div>
+		    <div class="hidden-xs">4</div>
+		</div>
+		<div class="col-xxs-4 col-xs-12 col-s-4">
+		    <div class="visible-xs">12</div>
+		    <div class="hidden-xs">4</div>
+		</div>
+	    </div>
+	</div>
+	<pre class="language-markup"><code>&lt;div class="row"&gt;
     &lt;div class="col-xxs-4 col-xs-6 col-s-4"&gt;...&lt;/div&gt;
     &lt;div class="col-xxs-4 col-xs-6 col-s-4"&gt;...&lt;/div&gt;
     &lt;div class="col-xxs-4 col-xs-12 col-s-4"&gt;...&lt;/div&gt;
@@ -406,24 +401,24 @@ sublinks: ["#mediaqueries|Media Queries",
     </section>
     <hr />
     <section id="offsetting">
-        <h3>Offsetting Columns</h3>
-        <p>Columns can be offset by each column width.</p>
-        <p>
-            Use classes <code>.offset-{range}-{number}</code> to push by column width.
-        </p>
-        <p class="clearfix">
-            <button type="button" data-modal-target="#offsetting-test" class="push">Click to test</button>
-        </p>
-        <div id="offsetting-test" class="grid-demo">
-            <div class="row">
-                <div class="col-xxs-4">4</div>
-                <div class="col-xxs-4 offset-xxs-4">4</div>
-            </div>
-            <div class="row">
-                <div class="col-xxs-4 offset-xxs-4">4</div>
-            </div>
-        </div>
-        <pre class="language-markup"><code>&lt;div class="row"&gt;
+	<h3>Deslocando colunas</h3>
+	<p>Colunas podem ser deslocadas pela largura de cada coluna.</p>
+	<p>
+	Use as classes <code>.offset-{alcance}-{número}</code> para empurrar a largura por coluna.
+	</p>
+	<p class="clearfix">
+	<button type="button" data-modal-target="#offsetting-test" class="push">Clique aqui para testar</button>
+	</p>
+	<div id="offsetting-test" class="grid-demo">
+	    <div class="row">
+		<div class="col-xxs-4">4</div>
+		<div class="col-xxs-4 offset-xxs-4">4</div>
+	    </div>
+	    <div class="row">
+		<div class="col-xxs-4 offset-xxs-4">4</div>
+	    </div>
+	</div>
+	<pre class="language-markup"><code>&lt;div class="row"&gt;
     &lt;div class="col-xxs-4"&gt;4&lt;/div&gt;
     &lt;div class="col-xxs-4 offset-xxs-4"&gt;4&lt;/div&gt;
 &lt;/div&gt;
@@ -433,130 +428,129 @@ sublinks: ["#mediaqueries|Media Queries",
     </section>
     <hr />
     <section id="ordering">
-        <h3>Ordering Columns</h3>
-        <p>
-            The order of columns can be reversed by combining classes <code>.push-{range}-{number}</code> and <code>.pull-{range}-{number}</code>.
-        </p>
-        <p class="clearfix">
-            <button type="button" data-modal-target="#ordering-test" class="push">Click to test</button>
-        </p>
-        <div id="ordering-test" class="grid-demo">
-            <div class="row">
-                <div class="col-xxs-4 push-xxs-8">4</div>
-                <div class="col-xxs-8 pull-xxs-4">8</div>
-            </div>
-        </div>
-        <pre class="language-markup"><code>&lt;div class="row"&gt;
+	<h3>Ordenando as colunas</h3>
+	<p>
+	A ordem das colunas podem ser invertidas combinando as classes <code>.push-{range}-{number}</code> e <code>.pull-{range}-{number}</code>.
+	</p>
+	<p class="clearfix">
+	<button type="button" data-modal-target="#ordering-test" class="push">Clique aqui para testar</button>
+	</p>
+	<div id="ordering-test" class="grid-demo">
+	    <div class="row">
+		<div class="col-xxs-4 push-xxs-8">4</div>
+		<div class="col-xxs-8 pull-xxs-4">8</div>
+	    </div>
+	</div>
+	<pre class="language-markup"><code>&lt;div class="row"&gt;
     &lt;div class="col-xxs-4 push-xxs-8"&gt;4&lt;/div&gt;
     &lt;div class="col-xxs-8 pull-xxs-4"&gt;8&lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </section>
     <hr />
     <section id="equal">
-        <h3>Equal Height</h3>
-        <p>
-            Adding the class <code>.equal-height</code> to the row renders the columns in each row equal in height.
-            When stretching the full width of their container, columns collapse to the height of their content.
-        </p>
-        <div class="alert" role="alert">
-            <h4>Heads Up!</h4>
-            <p>
-                Equal height columns do not work with the block row grid as that layout uses a single row with wrapping columns.
-            </p>
-        </div>
-        <p class="clearfix">
-            <button type="button" data-modal-target="#equal-test" class="push">Click to test</button>
-        </p>
-        <div id="equal-test" class="grid-demo">
-            <div class="row equal-height">
-                <div class="col-xxs-6">
-                    <p>A column with a short amount of copy.</p>
-                </div>
-                <div class="col-xxs-6">
-                    <img src="../../assets/img/768x900.jpg" alt="responsive image" title="responsive image" />
-                </div>
-            </div>
-        </div>
-        <pre class="language-markup"><code>&lt;div class="row equal-height"&gt;
+	<h3>Igualando as alturas</h3>
+	<p>
+	Adicionando a classe <code>.equal-height</code> a fileira iguala as alturas das colunas em cada fileira.
+	Ao se esticar a largura inteira dos containers, as colunas que neles habitam vão sucumbir a altura do conteúdo.
+	</p>
+	<div class="alert" role="alert">
+	    <h4>Atenção!</h4>
+	    <p>
+	    Colunas com alturas iguais não funcionam com as fileiras em grade com blocos (block row grid), já que esse desenho usa uma fileira única com colunas acondicionadas.
+	    
+	    Equal height columns do not work with the block row grid as that layout uses a single row with wrapping columns.
+	    </p>
+	</div>
+	<p class="clearfix">
+	<button type="button" data-modal-target="#equal-test" class="push">Clique aqui para testar</button>
+	</p>
+	<div id="equal-test" class="grid-demo">
+	    <div class="row equal-height">
+		<div class="col-xxs-6">
+		    <p>Uma coluna com pouca coisa.</p>
+		</div>
+		<div class="col-xxs-6">
+		    <img src="../../assets/img/768x900.jpg" alt="responsive image" title="responsive image" />
+		</div>
+	    </div>
+	</div>
+	<pre class="language-markup"><code>&lt;div class="row equal-height"&gt;
     &lt;div class="col-xxs-6"&gt;
-        &lt;p&gt;A column with a short amount of copy.&lt;/p&gt;
+	&lt;p&gt;Uma coluna com pouca coisa.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class="col-xxs-6"&gt;
-        &lt;img src="../../assets/img/768x900.jpg" alt="responsive image" title="responsive image" /&gt;
+	&lt;img src="../../assets/img/768x900.jpg" alt="responsive image" title="responsive image" /&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </section>
     <hr />
     <section id="block">
-        <h3>Block Grid</h3>
-        <p>
-            The block grid allows us to evenly split contents of a list within the viewport. These items will automatically
-            reset to a new row based on the set column count.
-        </p>
-        <p>Assignment of the grid is done by using <code>.block-row-{size}-{number}</code> classes on the parent element.</p>
+	<h3>Grade de blocos</h3>
+	<p>
+	A grade de blocos nos permite dividir igualmente os conteúdos de uma lista dentro da janela de exibição. Esses ítems serão automaticamente reiniciados em uma nova fileira, de acordo com a contagem de colunas estabelecida.
+	</p>
+	<p>A tarefa da grade é feita usando as classes <code>.block-row-{tamanho}-{número}</code> no elemento superior.</p>
 
-        <div class="alert" role="alert">
-            <h4>Heads Up!</h4>
-            <p>
-                Column numbers within the block grid system work differently to the rest of the grid.
-                Instead of designating the number out of 12 columns to represent, they designate instead the number of
-                columns to show.
-            </p>
-            <p>
-                For example: <code>.block-row-xxs-6</code> instructs the browser to show 6 equal columns resetting
-                on each 7<sup>th</sup> item.
-            </p>
-        </div>
-        <p class="clearfix">
-            <button type="button" data-modal-target="#block-test" class="push">Click to test</button>
-        </p>
-        <div id="block-test" class="grid-demo">
-            <div class="block-row-xxs-2 block-row-xs-3 block-row-s-4 block-row-m-5 block-row-l-6">
-                <div>
-                    <span class="visible-xxs">2</span>
-                    <span class="visible-xs">3</span>
-                    <span class="visible-s">4</span>
-                    <span class="visible-m">5</span>
-                    <span class="visible-l">6</span>
-                </div>
-                <div>
-                    <span class="visible-xxs">2</span>
-                    <span class="visible-xs">3</span>
-                    <span class="visible-s">4</span>
-                    <span class="visible-m">5</span>
-                    <span class="visible-l">6</span>
-                </div>
-                <div>
-                    <span class="visible-xxs">2</span>
-                    <span class="visible-xs">3</span>
-                    <span class="visible-s">4</span>
-                    <span class="visible-m">5</span>
-                    <span class="visible-l">6</span>
-                </div>
-                <div>
-                    <span class="visible-xxs">2</span>
-                    <span class="visible-xs">3</span>
-                    <span class="visible-s">4</span>
-                    <span class="visible-m">5</span>
-                    <span class="visible-l">6</span>
-                </div>
-                <div>
-                    <span class="visible-xxs">2</span>
-                    <span class="visible-xs">3</span>
-                    <span class="visible-s">4</span>
-                    <span class="visible-m">5</span>
-                    <span class="visible-l">6</span>
-                </div>
-                <div>
-                    <span class="visible-xxs">2</span>
-                    <span class="visible-xs">3</span>
-                    <span class="visible-s">4</span>
-                    <span class="visible-m">5</span>
-                    <span class="visible-l">6</span>
-                </div>
-            </div>
-        </div>
-<pre class="language-markup"><code>&lt;div class="block-row-xxs-2 block-row-xs-3 block-row-s-4 block-row-m-5 block-row-l-6"&gt;
+	<div class="alert" role="alert">
+	    <h4>Atanção</h4>
+	    <p>
+	    Colunas de números dentro do sistema de grade blocos funcionam de forma diferente do resto da grade.
+	    Ao invés de designar o número representado por 12 colunas, elas representam o número de colunas a mostrar.
+	    </p>
+	    <p>
+	    Por exemplo: <code>.block-row-xxs-6</code> informa o navegador para mostrar 6 colunas iguais, recomeçando ao chegar em cada 7<sup>o</sup> item.
+	    </p>
+	</div>
+	<p class="clearfix">
+	<button type="button" data-modal-target="#block-test" class="push">Click to test</button>
+	</p>
+	<div id="block-test" class="grid-demo">
+	    <div class="block-row-xxs-2 block-row-xs-3 block-row-s-4 block-row-m-5 block-row-l-6">
+		<div>
+		    <span class="visible-xxs">2</span>
+		    <span class="visible-xs">3</span>
+		    <span class="visible-s">4</span>
+		    <span class="visible-m">5</span>
+		    <span class="visible-l">6</span>
+		</div>
+		<div>
+		    <span class="visible-xxs">2</span>
+		    <span class="visible-xs">3</span>
+		    <span class="visible-s">4</span>
+		    <span class="visible-m">5</span>
+		    <span class="visible-l">6</span>
+		</div>
+		<div>
+		    <span class="visible-xxs">2</span>
+		    <span class="visible-xs">3</span>
+		    <span class="visible-s">4</span>
+		    <span class="visible-m">5</span>
+		    <span class="visible-l">6</span>
+		</div>
+		<div>
+		    <span class="visible-xxs">2</span>
+		    <span class="visible-xs">3</span>
+		    <span class="visible-s">4</span>
+		    <span class="visible-m">5</span>
+		    <span class="visible-l">6</span>
+		</div>
+		<div>
+		    <span class="visible-xxs">2</span>
+		    <span class="visible-xs">3</span>
+		    <span class="visible-s">4</span>
+		    <span class="visible-m">5</span>
+		    <span class="visible-l">6</span>
+		</div>
+		<div>
+		    <span class="visible-xxs">2</span>
+		    <span class="visible-xs">3</span>
+		    <span class="visible-s">4</span>
+		    <span class="visible-m">5</span>
+		    <span class="visible-l">6</span>
+		</div>
+	    </div>
+	</div>
+	<pre class="language-markup"><code>&lt;div class="block-row-xxs-2 block-row-xs-3 block-row-s-4 block-row-m-5 block-row-l-6"&gt;
     &lt;div&gt;...&lt;/div&gt;
     &lt;div&gt;...&lt;/div&gt;
     &lt;div&gt;...&lt;/div&gt;

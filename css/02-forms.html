@@ -10,49 +10,52 @@ sublinks: ["#vertical|Example : Vertical",
             "#markup|The Markup",
             "#ios|IOS"]
 ---
-<h1>Form Elements</h1>
-<p>Cross browser, normalized, responsive forms with minimal styling to allow easy overrides and lean CSS.</p>
+<h1>Elementos de formulários</h1>
 <p>
-    Responsive does not require you to add extra classes to style form inputs, instead all valid HTML5
-    input types have been responsively styled with progressively enhanced fallbacks for unsupported types.
+    Formulários que funcionam em múltiplos navegadores, que são normalizados, adaptáveis, e com estilo minimalista, tudo para que você possa sobreescrever e obter um CSS mais limpo.
 </p>
 <p>
-    Supported HTML5 types: <code>text</code>, <code>password</code>, <code>email</code>, <code>url</code>, <code>search</code>,
+    O Responsive não requer que você adicione classes extras só para estilizar campos de inserção de dados em formulários.
+    Pelo contrário, todos os campos válidos de inserção de dados em HTML5 foram estilizados para serem adaptáveis, com melhorias progressivamente implementadas para tipos não suportados.
+</p>
+<p>
+    Tipos de HTML5 suportados: <code>text</code>, <code>password</code>, <code>email</code>, <code>url</code>, <code>search</code>,
     <code>tel</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>,
-    <code>week</code>, <code>number</code>, <code>range</code>, and <code>color</code>.
+    <code>week</code>, <code>number</code>, <code>range</code>, e <code>color</code>.
 </p>
 <p>
-    A hook class <code>.readonly</code> can be used to mimic non-editable inputs,
-    and all fields can be made to display inline by adding the class <code>.inline-block</code>.
+    A classe <code>.readonly</code> pode ser usada como gancho para simular campos não-editáveis, 
+    e todos os campos podem ser configurados para aparecer na linha, precisando apenas adicionar a classe <code>.inline-block</code>.
 </p>
 <div class="alert" role="alert">
-    <h4>Right-to-Left Language Support</h4>
+    <h4>Suporte a línguas com escrita da direita para a esquerda</h4>
     <p>
-        Adding the attribute <code>dir="rtl"</code> to the <code>html</code> tag will reverse the layout
+	Adicionar o atributo <code>dir="rtl"</code> para a tag <code>html</code> irá inverter o layout
+	de campos para inserção de dados para permitir escritas da direita para a esquerda.
         of form inputs to allow for right-to-left languages.
     </p>
 </div>
 <hr />
 <section id="examples">
     <section id="vertical">
-        <h1>Vertical Form</h1>
+        <h1>Formulários verticais</h1>
         <p>
-            Responsive form elements span 100% by default; their width is designed to be constrained by the existing grid system.
-            This makes them extremely flexible.
+	    Os elementos de formulários do Responsive abrangem 100% por padrão; a largura deles foi desenhada para ser restringida pela grade que existe no sistema.
+	    Isso faz deles elementos extremamente flexíveis.
         </p>
         <form action="#">
             <fieldset>
-                <legend>Standard Form</legend>
+                <legend>Formulário padrão</legend>
                 <div class="row">
                     <div class="col-s-6">
-                        <label for="input1">Text</label>
-                        <input type="text" id="input1" value="standard input...">
-                        <label for="input-disabled1">Disabled</label>
-                        <input type="text" id="input-disabled1" disabled value="disabled input...">
-                        <p>Support text to help describe the input.</p>
-                        <label for="input-no-edit1">Non editable</label>
-                        <span id="input-no-edit1" class="readonly">No edit</span>
-                        <label for="select-default1">Select</label>
+                        <label for="input1">Texto</label>
+                        <input type="text" id="input1" value="inserção de dados padrão...">
+                        <label for="input-disabled1">Campo desativado</label>
+                        <input type="text" id="input-disabled1" disabled value="campo desativado...">
+                        <p>Texto de apoio, para descrever o campo.</p>
+                        <label for="input-no-edit1">Não editável</label>
+                        <span id="input-no-edit1" class="readonly">Nenhuma edição</span>
+                        <label for="select-default1">Selecionar</label>
                         <select id="select-default1">
                             <option>1</option>
                             <option>2</option>
@@ -60,7 +63,7 @@ sublinks: ["#vertical|Example : Vertical",
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <label for="multiple-select-default1">Multiple Select</label>
+                        <label for="multiple-select-default1">Seleção múltipla</label>
                         <select id="multiple-select-default1" multiple="" size="3">
                             <option>1</option>
                             <option>2</option>
@@ -68,7 +71,7 @@ sublinks: ["#vertical|Example : Vertical",
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <label for="multiple-select-optgroup-default1">Multiple Select with opt groups</label>
+                        <label for="multiple-select-optgroup-default1">Seleção múltipla com grupos opcionais</label>
                         <select id="multiple-select-optgroup-default1" multiple size="5">
                             <option selected> 1</option>
                             <optgroup label="Group 1">
@@ -81,86 +84,86 @@ sublinks: ["#vertical|Example : Vertical",
                             <option> 4</option>
                             <option> 5</option>
                         </select>
-                        <label for="input-file1">File upload</label>
+                        <label for="input-file1">Enviar arquivo</label>
                         <input id="input-file1" type="file">
-                        <label for="input-number1">Number</label>
+                        <label for="input-number1">Número</label>
                         <input type="number" id="input-number1">
-                        <label for="input-password1">Password</label>
+                        <label for="input-password1">Senha</label>
                         <input type="password" id="input-password1">
-                        <label for="input-time1">Time</label>
+                        <label for="input-time1">Tempo</label>
                         <input type="time" id="input-time1">
-                        <label for="input-week1">Week</label>
+                        <label for="input-week1">Semana</label>
                         <input type="week" id="input-week1">
-                        <label for="input-month1">Month</label>
+                        <label for="input-month1">Mês</label>
                         <input type="month" id="input-month1">
-                        <label for="input-date1">Date</label>
+                        <label for="input-date1">Data</label>
                         <input type="date" id="input-date1">
                     </div>
                     <div class="col-s-6">
-                        <label for="input-datetime1">Datetime</label>
+                        <label for="input-datetime1">Data/hora</label>
                         <input type="datetime" id="input-datetime1">
-                        <label for="input-datetime-local1">Datetime Local</label>
+                        <label for="input-datetime-local1">Data/hora local</label>
                         <input type="datetime-local" id="input-datetime-local1">
-                        <label for="input-search1">Search</label>
+                        <label for="input-search1">Pesquisa</label>
                         <input type="search" id="input-search1" placeholder="Search...">
-                        <label for="input-color1">Color</label>
+                        <label for="input-color1">Cor</label>
                         <input type="color" id="input-color1">
-                        <label for="input-range1">Range</label>
+                        <label for="input-range1">Alcance</label>
                         <input type="range" id="input-range1" min="0" max="100" value="50">
                         <label for="input-email1">Email</label>
                         <input type="email" id="input-email1">
-                        <label for="check-disabled1"><input type="checkbox" id="check-disabled1" value="option1" disabled> Disabled Checkbox</label>
-                        <label for="check1"><input type="checkbox" id="check1" value="option1"> Checkbox 1</label>
-                        <label for="check2"><input type="checkbox" id="check2" value="option2"> Checkbox 2</label>
+                        <label for="check-disabled1">Caixa de seleção desativada</label>
+                        <label for="check1"><input type="checkbox" id="check1" value="option1"> Caixa de seleção 1</label>
+                        <label for="check2"><input type="checkbox" id="check2" value="option2"> Caixa de seleção 2</label>
                         <label for="radio1"><input type="radio" id="radio1" name="radio" value="option1" checked> Radio 1</label>
                         <label for="radio2"><input type="radio" id="radio2" name="radio" value="option1"> Radio 2</label>
-                        <label for="textarea1">Textarea</label>
+                        <label for="textarea1">Área de texto</label>
                         <textarea id="textarea1"></textarea>
                     </div>
                 </div>
             </fieldset>
 
             <div class="form-actions">
-                <button type="submit">Save changes</button>
-                <button type="button">Cancel</button>
+                <button type="submit">Salvar mudanças</button>
+                <button type="button">Cancelar</button>
             </div>
         </form>
     </section>
     <section id="horizontal">
-        <h1>Horizontal Form</h1>
+        <h1>Formulário horizontal</h1>
         <form action="#">
             <fieldset>
-                <legend>Standard Form spanning two columns</legend>
+                <legend>Formulário padrão abrangindo duas colunas</legend>
                 <div class="row">
                     <div class="col-s-6">
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input2">Text</label>
+				<label for="input2">Texto</label>
                             </div>
                             <div class="col-s-8">
-                                <input type="text" id="input2" value="standard input...">
+                                <input type="text" id="input2" value="entrada padrão de texto...">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-disabled2">Disabled</label>
+                                <label for="input-disabled2">Entrada de texto desativada</label>
                             </div>
                             <div class="col-s-8">
-                                <input type="text" id="input-disabled2" disabled value="disabled input...">
-                                <p>Support text to help describe the input.</p>
+                                <input type="text" id="input-disabled2" disabled value="input desativado...">
+                                <p>Texto de apoio para ajudar a descrever a entrada.</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-no-edit2">Non editable</label>
+                                <label for="input-no-edit2">Não editável</label>
                             </div>
                             <div class="col-s-8">
-                                <span id="input-no-edit2" class="readonly">No edit</span>
+                                <span id="input-no-edit2" class="readonly">Sem edição</span>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="select-default2">Select</label>
+                                <label for="select-default2">Selecionar</label>
                             </div>
                             <div class="col-s-8">
                                 <select id="select-default2">
@@ -174,7 +177,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="multiple-select-default2">Multiple Select</label>
+                                <label for="multiple-select-default2">Seleção múltipla</label>
                             </div>
                             <div class="col-s-8">
                                 <select id="multiple-select-default2" multiple="" size="3">
@@ -188,7 +191,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="multiple-select-optgroup-default2">Multiple Select with opt groups</label>
+                                <label for="multiple-select-optgroup-default2">Seleção múltipla com grupos opcionais</label>
                             </div>
                             <div class="col-s-8">
                                 <select id="multiple-select-optgroup-default2" multiple size="5">
@@ -207,7 +210,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-file2">File upload</label>
+                                <label for="input-file2">Enviar arquivo</label>
                             </div>
                             <div class="col-s-8">
                                 <input id="input-file2" type="file">
@@ -215,7 +218,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-number2">Number</label>
+                                <label for="input-number2">Número</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="number" id="input-number2">
@@ -223,7 +226,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-password2">Password</label>
+                                <label for="input-password2">Senha</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="password" id="input-password2">
@@ -231,7 +234,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-time2">Time</label>
+                                <label for="input-time2">Tempo</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="time" id="input-time2">
@@ -239,7 +242,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-week2">Week</label>
+                                <label for="input-week2">Semana</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="week" id="input-week2">
@@ -247,7 +250,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-month2">Month</label>
+                                <label for="input-month2">Mês</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="month" id="input-month2">
@@ -255,7 +258,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-date2">Date</label>
+                                <label for="input-date2">Data</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="date" id="input-date2">
@@ -265,7 +268,7 @@ sublinks: ["#vertical|Example : Vertical",
                     <div class="col-s-6">
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-datetime2">Datetime</label>
+                                <label for="input-datetime2">Data/hora</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="datetime" id="input-datetime2">
@@ -273,7 +276,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-datetime-local2">Datetime Local</label>
+                                <label for="input-datetime-local2">Data/hora Local</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="datetime-local" id="input-datetime-local2">
@@ -281,7 +284,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-search2">Search</label>
+                                <label for="input-search2">Pesquise</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="search" id="input-search2" placeholder="Search...">
@@ -289,7 +292,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-color2">Color</label>
+                                <label for="input-color2">Cor</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="color" id="input-color2">
@@ -297,7 +300,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="input-range2">Range</label>
+                                <label for="input-range2">Alcance</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="range" id="input-range2" min="0" max="100" value="50">
@@ -313,7 +316,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="check-disabled3">Disabled Checkbox</label>
+                                <label for="check-disabled3">Caixa de seleção desativada</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="checkbox" id="check-disabled3" value="option1" disabled>
@@ -321,7 +324,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="check3">Checkbox 3</label>
+                                <label for="check3">Caixa de seleção 3</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="checkbox" id="check3" value="option1">
@@ -329,7 +332,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="check4">Checkbox 4</label>
+                                <label for="check4">Caixa de seleção 4</label>
                             </div>
                             <div class="col-s-8">
                                 <input type="checkbox" id="check4" value="option2">
@@ -353,7 +356,7 @@ sublinks: ["#vertical|Example : Vertical",
                         </div>
                         <div class="row">
                             <div class="col-s-4">
-                                <label for="textarea2">Textarea</label>
+                                <label for="textarea2">Área de texto</label>
                             </div>
                             <div class="col-s-8">
                                 <textarea id="textarea2"></textarea>
@@ -364,25 +367,23 @@ sublinks: ["#vertical|Example : Vertical",
             </fieldset>
 
             <div class="form-actions">
-                <button type="submit">Save changes</button>
-                <button type="button">Cancel</button>
+                <button type="submit">Salvar mudanças</button>
+                <button type="button">Cancelar</button>
             </div>
         </form>
     </section>
     <section id="grouped">
-        <h1>Grouped Inputs</h1>
+        <h1>Entrada de dados agrupada (Grouped inputs)</h1>
         <p>
-            Inputs can be grouped with prefixes and suffixes attached by wrapping in a container with the
-            classs <code>.input-group</code> to group them. These groups are fully responsive and will adapt to the full width
-            of their containing element.
+	    Dados podem ser agrupados com prefixos e sufixos anexados, bastando usar um container com a classe <code>.input-group</code> para agrupá-los. Esse grupos são inteiramente responsáveis e irão se adaptar a largura total do container que os contém.
         </p>
         <p>
-            Adding the class <code>.input-group-addon .supplement</code>
-            to the spans within the input group will style them appropriately.
+	    Adicionar a classe <code>.input-group-addon .supplement</code>
+	    aos vãos (spans) dentro do grupo de inserção (input group) irá estilizá-los apropriadamente.
         </p>
         <form action="#">
             <fieldset>
-                <legend>Supplementary addons.</legend>
+                <legend>Adições suplementares.</legend>
                 <div class="input-group">
                     <span class="input-group-addon supplement">£</span>
                     <input type="text" />
@@ -395,7 +396,7 @@ sublinks: ["#vertical|Example : Vertical",
                 </div>
 
                 <div class="input-group">
-                    <span class="input-group-addon supplement">Turtle</span>
+                    <span class="input-group-addon supplement">Tartaruga</span>
                     <select>
                         <option>Leonardo</option>
                         <option>Donetello</option>
@@ -410,7 +411,7 @@ sublinks: ["#vertical|Example : Vertical",
                         <option>ALL</option>
                         <option>AMD</option>
                     </select>
-                    <span class="input-group-addon supplement">Currency</span>
+                    <span class="input-group-addon supplement">Moeda</span>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon supplement">£</span><select>
@@ -431,7 +432,7 @@ sublinks: ["#vertical|Example : Vertical",
                 </div>
             </fieldset>
             <fieldset>
-                <legend>Checkboxes and radio</legend>
+                <legend>Caixas de seleção e rádio</legend>
                 <div class="input-group">
                     <span class="input-group-addon supplement"><input type="checkbox" /></span>
                     <input type="text" />
@@ -466,8 +467,8 @@ sublinks: ["#vertical|Example : Vertical",
 </section>
 <hr />
 <section id="markup">
-    <h1>The Markup</h1>
-    <p>The entire markup for the second form. Note the grid wrappers required for arranging inputs.</p>
+    <h1>A marcação</h1>
+    <p>A marcação completa para o segundo formulário. Note como que a grade é organizada para poder rearranjar as entradas (inputs).</p>
 <pre class="language-markup"><code>&lt;form action="#"&gt;
     &lt;fieldset&gt;
         &lt;legend&gt;Standard Form spanning two columns&lt;/legend&gt;
