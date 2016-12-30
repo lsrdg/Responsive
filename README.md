@@ -27,17 +27,17 @@ On the left, the name in English, as you can find on the original repository.
 On the right, the name in Brazilian Portuguese, as you will eventually find on this branch (`pt`).
 
 -----------------------------------------
-[ ] = todo | [o] = ongoing | [X] = done |
+[ ] = todo | [O] = ongoing | [X] = done |
 -------------------------------------------------
 - [ ] index.html		| index.html
 - [X] getting-started.html	| comecando.html
-- [.] css/			| css/
+- [O] css/			| css/
     - [X] index.html		| index.html
     - [X] base			| base
     - [X] grid			| grade
     - [X] forms			| formularios
-    - [o] buttons		| botoes
-    - [ ] tables		| tabelas
+    - [X] buttons		| botoes
+    - [O] tables		| tabelas
     - [ ] media			| midia
     - [ ] lists			| listas
     - [ ] alerts		| alertas
