@@ -31,13 +31,13 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 -------------------------------------------------
 - [ ] index.html		| index.html
 - [X] getting-started.html	| comecando.html
-- [O] css/			| css/
+- [0] css/			| css/
     - [X] index.html		| index.html
     - [X] base			| base
     - [X] grid			| grade
     - [X] forms			| formularios
     - [X] buttons		| botoes
-    - [O] tables		| tabelas
+    - [0] tables		| tabelas
     - [ ] media			| midia
     - [ ] lists			| listas
     - [ ] alerts		| alertas
