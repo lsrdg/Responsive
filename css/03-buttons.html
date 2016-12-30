@@ -16,14 +16,14 @@ sublinks: ["#standard|Standard Layout","#disabled|Disabled","#inline|Inline","#g
     <div class="alert">
         <h4>Atenção!</h4>
         <p>
-            We have deliberately not styled elements with <code>[role="button"]</code> to match their native counterparts.
-            This is for accessibility reasons as we believe that is will promote misuse to do so.
+	    De forma proposital, os elementos com <code>[role="button"]</code> não foram estilizados para combinar com as suas contrapartes nativas.
+		Isso foi feito por razões de acessibilidade, já que acreditamos que isso iria promover mal-uso.
         </p>
     </div>
     <hr />
     <section id="standard">
-        <h1>Default Button Styles</h1>
-        <p>All styles are attribute based with all four button states covered:</p>
+        <h1>Estilos de botão padrão</h1>
+        <p>Todos os estilos são baseados nos atributos, cobrindo todos os quatro estados dos botões:</p>
         <ul>
             <li><code>:hover</code></li>
             <li><code>:focus</code></li>
@@ -33,63 +33,63 @@ sublinks: ["#standard|Standard Layout","#disabled|Disabled","#inline|Inline","#g
         <div class="row">
             <div class="col-s-6">
                 <div>
-                    <h3>Button</h3>
-                    <p>Standard <code>button</code> element.</p>
+                    <h3>Botão</h3>
+                    <p>Elemento de botão padrão: <code>button</code>.</p>
                     <button>button</button>
                 </div>
                 <div>
-                    <h3>Input : Button</h3>
-                    <p>Standard <code>input[type="button"]</code> element.</p>
+                    <h3>Botão : de inserção</h3>
+                    <p>Elemento padrão de botão para inserção: <code>input[type="button"]</code>.</p>
                     <input type="button" value="button" />
                 </div>
             </div>
             <div class="col-s-6">
                 <div>
-                    <h3>Input : Submit </h3>
-                    <p>Standard <code>input[type="submit"]</code> element.</p>
+                    <h3>Botão : para enviar</h3>
+		    <p>Elemento padrão para o envio de dados <code>input[type="submit"]</code>.</p>
                     <input type="submit" value="submit" />
                 </div>
                 <div>
-                    <h3>Input : Reset </h3>
-                    <p>Standard <code>input[type="reset"]</code> element.</p>
+                    <h3>Botão : para reiniciar </h3>
+                    <p>Elemento de botão padrão para reiniciar: <code>input[type="reset"]</code>.</p>
                     <input type="reset" value="reset" />
                 </div>
             </div>
         </div>
         <div class="alert" role="alert">
-            <h4>Heads Up!</h4>
+            <h4>Atenção!</h4>
             <p>
-                We strongly recommend using the <code>&lt;button&gt;&lt;/button&gt;</code> element over
-                the <code>&lt;input /&gt;</code> element for all button style markup.
+		Recomendamos fortemente o uso do elemento <code>&lt;button&gt;&lt;/button&gt;</code> ao invés de
+		usar o elemento <code>&lt;input /&gt;</code> para estilizar toda a marcação de butões.
             </p>
         </div>
     </section>
     <hr />
     <section id="disabled">
-        <h1>Disabled State</h1>
-        <p>Hyperlink disabled state are styled by adding the class <code>.disabled</code>. The developer would have to additionally use JavaScript to prevent the default behaviour.</p>
+        <h1>Estado desativado</h1>
+        <p>Hyperlinks em estado 'desativado' são estilizados adicionando a classe <code>.disabled</code>. O desenvolvedor teria que adicionalmente usar JavaScript para prevenir o comportamento padrão.</p>
         <div class="row">
             <div class="col-s-6">
                 <div>
-                    <h3>Button</h3>
-                    <p>Standard <code>button</code> element.</p>
+                    <h3>Botão</h3>
+                    <p>Elemento de botão padrão: <code>button</code>.</p>
                     <button disabled>button</button>
                 </div>
                 <div>
-                    <h3>Input : Button</h3>
-                    <p>Standard <code>input[type="button"]</code> element.</p>
+                    <h3>Botão : de inserção</h3>
+                    <p>Elemento padrão de botão para inserção <code>input[type="button"]</code>.</p>
                     <input type="button" value="button" disabled />
                 </div>
             </div>
             <div class="col-s-6">
                 <div>
-                    <h3>Input : Submit</h3>
-                    <p>Standard <code>input[type="submit"]</code> element.</p>
+                    <h3>Botão : para enviar</h3>
+                    <p>Elemento padrão para o envio de dados <code>input[type="submit"]</code>.</p>
                     <input type="submit" value="submit" disabled />
                 </div>
                 <div>
-                    <h3>Input : Reset</h3>
-                    <p>Standard <code>input[type="reset"]</code> element.</p>
+                    <h3>Botão : para reiniciar</h3>
+                    <p>Elemento de botão padrão para reiniciar <code>input[type="reset"]</code>.</p>
                     <input type="reset" value="reset" disabled />
                 </div>
             </div>
@@ -97,16 +97,16 @@ sublinks: ["#standard|Standard Layout","#disabled|Disabled","#inline|Inline","#g
     </section>
     <hr />
     <section id="inline">
-        <h1>Inline Buttons </h1>
+        <h1>Botões na linha</h1>
         <p>
-            To create buttons that display inline with inputs wrap the elements in a div with the class <code>.input-group</code> and button in a span
-            with the class <code>.input-group-addon</code>.
+	    Para criar botões que aparecem diretamento na linha e com o campo para inserção de dado, posicione o elemento dentro de um container (div) com a classe <code>.input-group</code> e o botão em um vão (span)
+	    com a classe <code>.input-group-addon</code>.
         </p>
         <div class="row">
             <div class="col-s-6">
                 <div>
-                    <h3>Button</h3>
-                    <p>Standard <code>button</code> element.</p>
+                    <h3>Botão</h3>
+                    <p>Elemento de botão padrão: <code>button</code>.</p>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <button>button</button>
@@ -121,8 +121,8 @@ sublinks: ["#standard|Standard Layout","#disabled|Disabled","#inline|Inline","#g
                     </div>
                 </div>
                 <div>
-                    <h3>Input : Button</h3>
-                    <p>Standard <code>input[type="button"]</code> element.</p>
+                    <h3>Botão : de inserção</h3>
+                    <p>Elemento padrão de botão para inserção: <code>input[type="button"]</code>.</p>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <input type="button" value="button" />
@@ -140,9 +140,9 @@ sublinks: ["#standard|Standard Layout","#disabled|Disabled","#inline|Inline","#g
             </div>
             <div class="col-s-6">
                 <div>
-                    <h3>Input : Submit</h3>
+                    <h3>Botão : para envio</h3>
                     <p>
-                        Standard <code>input[type="submit"]</code> element.
+                        Elemento padrão para o envio de dados <code>input[type="submit"]</code>.
                     </p>
                     <div class="input-group">
                         <span class="input-group-addon">
@@ -158,8 +158,8 @@ sublinks: ["#standard|Standard Layout","#disabled|Disabled","#inline|Inline","#g
                     </div>
                 </div>
                 <div>
-                    <h3>Input : Reset</h3>
-                    <p>Standard <code>input[type="reset"]</code> element.</p>
+                    <h3>Botão : para reiniciar</h3>
+                    <p>Elemento de botão padrão para reiniciar: <code>input[type="reset"]</code>.</p>
                     <div class="input-group">
                         <input type="text" />
                         <span class="input-group-addon">
@@ -178,50 +178,50 @@ sublinks: ["#standard|Standard Layout","#disabled|Disabled","#inline|Inline","#g
     </section>
     <hr />
     <section id="grouped">
-        <h1>Grouped Buttons</h1>
-        <p>Wrap the buttons in a div with class <code>.btn-group</code></p>
+        <h1>Botões agrupados</h1>
+        <p>Coloque os botões em um container (div) com a classe <code>.btn-group</code>.</p>
         <div class="row">
             <div class="col-s-6">
                 <div>
-                    <h3>Button</h3>
-                    <p>Standard <code>button</code> element.</p>
+                    <h3>Botão</h3>
+                    <p>Elemento de botão padrão: <code>button</code>.</p>
                     <div class="btn-group">
-                        <button>first</button>
-                        <button>second</button>
-                        <button>third</button>
-                        <button>fourth</button>
+                        <button>primeiro</button>
+                        <button>segundo</button>
+                        <button>terceiro</button>
+                        <button>quarto</button>
                     </div>
                 </div>
                 <div>
-                    <h3>Input : Button</h3>
-                    <p>Standard <code>input[type="button"]</code> element.</p>
+                    <h3>Botão : de inserção</h3>
+                    <p>Elemento padrão de botão para inserção: <code>input[type="button"]</code>.</p>
                     <div class="btn-group">
-                        <input type="button" value="first" />
-                        <input type="button" value="second" />
-                        <input type="button" value="third" />
-                        <input type="button" value="fourth" />
+                        <input type="button" value="primeiro" />
+                        <input type="button" value="segundo" />
+                        <input type="button" value="terceiro" />
+                        <input type="button" value="quarto" />
                     </div>
                 </div>
             </div>
             <div class="col-s-6">
                 <div>
-                    <h3>Input : Submit</h3>
-                    <p>Standard <code>input[type="submit"]</code> element.</p>
+                    <h3>Botão : para envio</h3>
+                    <p>Elemento padrão de botão para envio de dado: <code>input[type="submit"]</code>.</p>
                     <div class="btn-group">
-                        <input type="submit" value="first" />
-                        <input type="submit" value="second" />
-                        <input type="submit" value="third" />
-                        <input type="submit" value="fourth" />
+                        <input type="submit" value="primeiro" />
+                        <input type="submit" value="segundo" />
+                        <input type="submit" value="terceiro" />
+                        <input type="submit" value="quarto" />
                     </div>
                 </div>
                 <div>
-                    <h3>Input : Reset</h3>
-                    <p>Standard <code>input[type="reset"]</code> element.</p>
+                    <h3>Botão : para reiniciar</h3>
+                    <p>Elemento padrão de botão para reiniciar: <code>input[type="reset"]</code>.</p>
                     <div class="btn-group">
-                        <input type="reset" value="first" />
-                        <input type="reset" value="second" />
-                        <input type="reset" value="third" />
-                        <input type="reset" value="fourth" />
+                        <input type="reset" value="primeiro" />
+                        <input type="reset" value="segundo" />
+                        <input type="reset" value="terceiro" />
+                        <input type="reset" value="quarto" />
                     </div>
                 </div>
             </div>
