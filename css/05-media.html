@@ -8,16 +8,15 @@ subheading: Responsive media elements that scale with your browser.
 sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
 ---
 
-<h1>Media</h1>
+<h1>Mídia</h1>
 <p>
-    Responsive media elements that scale with your browser. Images, Iframes and Video have all been styled to ensure
-    they adapt to your viewport.
+    Elementos de mídia que escalam junto com o seu navegador. Imagens, Iframes e Vídeos foram todos estilizados para assegurar que se adaptem a sua janela de exibição.
 </p>
-    The code here is based on research and work by <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">Theirry Koblentz</a>, <a href="http://amobil.se/2011/11/responsive-embeds/">Anders Andersen</a>, <a href="http://niklausgerber.com/blog/responsive-google-or-bing-maps/">Niklaus Gerber</a>, and <a href="http://embedresponsively.com/">Jeff Hobbs</a>.
+    O código aqui foi baseado na pesquisa e trabalho de <a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">Theirry Koblentz</a>, <a href="http://amobil.se/2011/11/responsive-embeds/">Anders Andersen</a>, <a href="http://niklausgerber.com/blog/responsive-google-or-bing-maps/">Niklaus Gerber</a>, e <a href="http://embedresponsively.com/">Jeff Hobbs</a>.
 <hr />
 <section id="images">
-    <h2>Images</h2>
-    <p>Images are responsive by default ensuring they do not overflow the bounds of their container.</p>
+    <h2>Imagens</h2>
+    <p>As imagens são todas adaptáveis por padrão, assegurando que elas não transbordem para além dos limites de seus respectivos containers.</p>
     <div class="row">
         <div class="col-s-3">
             <img src="../../assets/img/768x900.jpg" alt="responsive image" title="responsive image" />
@@ -32,8 +31,8 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
             <img src="../../assets/img/SVG_logo.svg" alt="responsive image" title="responsive image" />
         </div>
     </div>
-    <h2>Constrained Images</h2>
-    <p>Vertically and horizontally constrained and centered. Wrap the image in a container with the class <code>.media</code>.</p>
+    <h2>Images restringidas</h2>
+    <p>Restrigidas vertical e horizontalmente e centralizadas. Coloque a imagem em um container com a classe <code>.media</code>.</p>
     <div class="row">
         <div class="col-s-3">
             <div class="media">
@@ -56,7 +55,7 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
             </div>
         </div>
     </div>
-    <p>Adding the class <code>.four-by-three</code> will change the aspect ration from the default of <var>16:9</var>.</p>
+    <p>Adicionar a classe <code>.four-by-three</code> irá mudar a razão do aspecto do padrão de <var>16:9</var>.</p>
     <div class="row">
         <div class="col-s-3">
             <div class="media four-by-three">
@@ -80,32 +79,32 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
         </div>
     </div>
     <aside class="alert" role="alert">
-        <h4>Heads Up!</h4>
+        <h4>Atenção!</h4>
         <p>
-            Internet Explorer versions 9/10/11 do not scale svg images correctly when loaded using an <code>&lt;img/&gt;</code> tag.
+	    As versões 9/10/11 do Internet Explorer não escalam imagens svg corretamente quando carregadas usando a tag <code>&lt;img/&gt;</code>.
         </p>
         <p>
-            In order to provide basic responsiveness we have added some CSS classes which replicate, to the most part, other compliant browser behaviour.
-            This however will force the svg to fill the full width of its parent container so if you require an svg to not do this you will have to
-            override the specific svg with CSS to apply a maximum defined width.
+	    De modo a prover uma adaptabilidade básica, adicionamos algumas classes de CSS que replicam, em grande parte, outros comportamentos do navegador.
+	    Entretanto, isso irá forçat a svg a preencher a largura total do container que à contém, portanto se você requer que uma imagem svg não faça isso, você terá que
+	    sobreescrever a svg específica com CSS para aplicar uma largura máxima definida.
         </p>
     </aside>
 </section>
 <hr />
 <section id="iframes">
     <h1>Iframes</h1>
-    <p>We've provided responsive wrappers for iframe embeds from many popular sites.</p>
+    <p>Nós provemos campos adaptáveis para iframes embutídos de vários sites populares.</p>
     <div class="row">
         <div class="col-s-6">
             <h2>Youtube</h2>
-            <p>Add class <code>.media</code> to the media container.</p>
+            <p>Adicione a classe <code>.media</code> ao container de mídia.</p>
             <div class="media">
                 <iframe src="http://www.youtube.com/embed/eRW84aVCMWo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
         <div class="col-s-6">
             <h2>Dailymotion</h2>
-            <p>Add class <code>.media</code> to the media container.</p>
+            <p>Adicione a classe <code>.media</code> ao container de mídia.</p>
             <div class="media">
                 <iframe src="http://www.dailymotion.com/embed/video/x10o8jk" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
@@ -115,7 +114,7 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
     <div class="row">
         <div class="col-s-6">
             <h2>Google Maps</h2>
-            <p>Add classes <code>.media</code> to the media container.</p>
+            <p>Adicione a classe <code>.media</code> ao container de mídia.</p>
             <div class="media">
                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/maps?q=glasgow&amp;ie=UTF8&amp;hq=&amp;hnear=Glasgow,+Glasgow+City,+United+Kingdom&amp;gl=uk&amp;t=m&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe>
                 <br />
@@ -124,7 +123,7 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
         </div>
         <div class="col-s-6">
             <h2>Vimeo</h2>
-            <p>Add classes <code>.media</code> to the media container.</p>
+            <p>Adicione a classe <code>.media</code> ao container de mídia.</p>
             <div class="media vimeo">
                 <iframe src="http://player.vimeo.com/video/101980132" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
@@ -133,14 +132,14 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
     <div class="row">
         <div class="col-s-6">
             <h2>Vine</h2>
-            <p>Add classes <code>.media</code> and <code>.vine</code> to the media container.</p>
+            <p>Adicione as classes <code>.media</code> e <code>.vine</code> ao container de mídia.</p>
             <div class="media vine">
                 <iframe src="https://vine.co/v/bYwPIluIipH/embed/simple" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
             </div>
         </div>
         <div class="col-s-6">
             <h2>Instagram</h2>
-            <p>Add classes <code>.media</code> and <code>.instagram</code> to the media container.</p>
+            <p>Adicione as classes <code>.media</code> e <code>.instagram</code> ao container de mídia.</p>
             <div class="media instagram">
                 <iframe src="http://instagram.com/p/dJJvzMI4X8/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
             </div>
@@ -148,7 +147,7 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
     </div>
     <div>
         <h2>Getty</h2>
-        <p>Add classes <code>.media</code> and <code>.getty</code> to the media container.</p>
+        <p>Adicione as classes <code>.media</code> e <code>.getty</code> ao container de mídia.</p>
         <div class="row">
             <div class="col-s-6">
                 <div class="media getty">
@@ -159,20 +158,20 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
     </div>
     <div class="alert" role="alert">
         <p>
-            Twitter, Facebook, SoundCloud, Storify, and Scribd (select 'Autosize') already provide responsive embed code.
+            Twitter, Facebook, SoundCloud, Storify, e Scribd (selecione 'Autosize') já provem código embutido adaptável.
         </p>
     </div>
 
-    <h2>Markup</h2>
+    <h2>Marcação</h2>
     <pre class="language-markup"><code>&lt;div class="media"&gt;
     &lt;iframe src="http://www.youtube.com/embed/eRW84aVCMWo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;</code></pre>
 </section>
 <hr />
 <section id="video">
-    <h1>Video</h1>
-    <p>Wrap the video element in a container marked with classes <code>.media</code> and <code>.video</code>.</p>
-    <p>Embed code taken from <a href="http://camendesign.com/code/video_for_everybody" rel="external nofollow">"Video For Everybody"</a>.</p>
+    <h1>Vídeo</h1>
+    <p>Coloque o elemento vídeo em um container marcado com as classes <code>.media</code> e <code>.video</code>.</p>
+    <p>Código embutido retirado de <a href="http://camendesign.com/code/video_for_everybody" rel="external nofollow">"Video For Everybody"</a>.</p>
     <div class="media video">
         <!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
         <video controls="controls" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360">
@@ -189,9 +188,9 @@ sublinks: ["#images|Images","#iframes|Iframes", "#video|Video"]
         </video>
     </div>
     <p>
-        <strong>Download video:</strong> <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">MP4 format</a> | <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">Ogg format</a> | <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm">WebM format</a>
+        <strong>Baixe o vídeo:</strong> <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">Formato MP4</a> | <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">Formato Ogg</a> | <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm">Formato WebM</a>
     </p>
-    <h2>Markup</h2>
+    <h2>Marcação</h2>
     <pre class="language-markup"><code>&lt;div class="media video"&gt;
     &lt;!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody --&gt;
     &lt;video controls="controls" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360"&gt;

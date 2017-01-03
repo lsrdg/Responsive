@@ -38,8 +38,8 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
     - [X] forms			| formularios
     - [X] buttons		| botoes
     - [X] tables		| tabelas
-    - [-] media			| midia
-    - [ ] lists			| listas
+    - [X] media			| midia
+    - [-] lists			| listas
     - [ ] alerts		| alertas
     - [ ] code 			| codigo
 - [ ] JavaScript/		| javascript
