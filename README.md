@@ -26,24 +26,24 @@ Even if you don't speak Portuguese, your ideas and insights are welcomed.
 On the left, the name in English, as you can find on the original repository.
 On the right, the name in Brazilian Portuguese, as you will eventually find on this branch (`pt`).
 
------------------------------------------
+
 [ ] = todo | [!] = ongoing | [X] = done |
-| ------------------------------------------------- |
-|	index.html	|	index.html	|
-| [X] |	getting-started.html	| comecando.html
-| [!] |	css/		| css/ |
-| | [X] | index.html | index.html |
-| | [X] | base	     | base            |
-| | [X] | grid	     | grade           |
-| | [X] | forms	     | formularios     |
-| | [X] | buttons    | botoes          |
-| | [X] | tables     | tabelas         |
-| | [X] | media	     | midia           |
-| | [X] | lists	     | listas          |
-| | [!] | alerts     | alertas         |
-| | [ ] | code 	     | codigo          |
-| ---------------------------------------------- |
-| JavaScript/		| javascript   |
+
+ | index.html | index.html |
+X | getting-started.html | comecando.html |
+! | css/ | css/ |
+X | index.html | index.html |
+X | base | base |
+X | grid | grade |
+X | forms | formularios |
+X | buttons | botoes |
+X | tables | tabelas |
+X | media | midia |
+X | lists | listas |
+! | alerts | alertas
+  | code | codigo |
+| ----------------------------------------- |
+| JavaScript/ | javascript |
 ------------------------------------------------ |
 
 ### Preview with Jekyll Server
