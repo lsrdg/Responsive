@@ -13,8 +13,8 @@ The process is being splitted into three chunks:
     - Spell and grammar checking
     - Proofreading
 
-3) Adaptation to the docs format	
- 	
+3) Adaptation to the docs format        
+        
 
 See below the details.
 
@@ -28,21 +28,21 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 
 
 
-- [ ] | index.html 		| index.html   	 |
-- [X] | getting-started.html 	| comecando.html |
-- [!] | css/ 			| css/ 		 |
-- [X] | index.html 		| index.html     |
-- [X] | base 			| base 	       	 |
-- [X] | grid 			| grade 	 |
-- [X] | forms 			| formularios    |
-- [X] | buttons 		| botoes         |
-- [X] | tables 			| tabelas        |
-- [X] | media 			| midia 	 |
-- [X] | lists 			| listas 	 |
-- [!] | alerts 			| alertas 	 |
-- [ ] | code 			| codigo 	 |
+- [ ] | index.html              | index.html     |
+- [X] | getting-started.html    | comecando.html |
+- [ ] | css/                    | css/           |
+- [X] | index.html              | index.html     |
+- [X] | base                    | base           |
+- [X] | grid                    | grade          |
+- [X] | forms                   | formularios    |
+- [X] | buttons                 | botoes         |
+- [X] | tables                  | tabelas        |
+- [X] | media                   | midia          |
+- [X] | lists                   | listas         |
+- [X] | alerts                  | alertas        |
+- [ ] | code                    | codigo         |
 
-- [ ] | JavaScript/ 		| javascript 	 |
+- [ ] | JavaScript/             | javascript     |
 
 ### Preview with Jekyll Server
 It might be necessary to prepend `bundle exec` to preview it locally. The 
@@ -57,5 +57,3 @@ On this repository:
 - `pt` is the master branch
 - Modified Gemfile 
 - Still with mixed filenames [!]
-
-
