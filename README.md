@@ -27,34 +27,35 @@ On the left, the name in English, as you can find on the original repository.
 On the right, the name in Brazilian Portuguese, as you will eventually find on this branch (`pt`).
 
 
-
-- [ ] | index.html                | index.html     |
-- [X] | getting-started.html      | comecando.html |
-
-- [X] | css/                      | css/           |
-- [X] | | index.html              | index.html     |
-- [X] | | base                    | base           |
-- [X] | | grid                    | grade          |
-- [X] | | forms                   | formularios    |
-- [X] | | buttons                 | botoes         |
-- [X] | | tables                  | tabelas        |
-- [X] | | media                   | midia          |
-- [X] | | lists                   | listas         |
-- [X] | | alerts                  | alertas        |
-- [X] | | code                    | codigo         |
-
-- [ ] | JavaScript/               | javascript     |
-- [ ] | | index.html              | index.html     |
-- [ ] | | carousel                | carrossel      |
-- [ ] | | modal                   | modal          |
-- [ ] | | dropdown
-- [ ] | | tabs
-- [ ] | | autosize
-- [ ] | | dismiss
-- [ ] | | tablelist
-- [ ] | | conditional
-- [ ] | | navigation
-- [ ] | | extras
+| English                   | Portuguese        | state |
+|---------------------------|-------------------|-------|
+| index.html                | index.html        |   -   |
+| getting-started.html      | comecando.html    |   X   |
+| css/                      | css/              |   X   |
+| index.html                | index.html        |   X   |
+| base                      | base              |   X   |
+| grid                      | grade             |   X   |
+| forms                     | formularios       |   X   |
+| buttons                   | botoes            |   X   |
+| tables                    | tabelas           |   X   |
+| media                     | midia             |   X   |
+| lists                     | listas            |   X   |
+| alerts                    | alertas           |   X   |
+| code                      | codigo            |   X   |
+| JavaScript/               | javascript        |   o   |
+| index.html                | index.html        |   -   |
+| carousel                  | carrossel         |   -   |
+| modal                     | modal             |   -   |
+| dropdown                  | menususpenso      |   -   |
+| tabs                      | abas              |   -   |
+| autosize                  | redimensionamento |   -   |
+| dismiss                   | dispersar         |   -   |
+| tablelist                 | listadetabela     |   -   |
+| conditional               | condicional       |   -   |
+| navigation                | navegacao         |   -   |
+| extras                    | extras            |   -   |
+|-------------------------------------------------------|
+| X = done      |    o = ongoing     | - = waiting list |
 
 ### Preview with Jekyll Server
 It might be necessary to prepend `bundle exec` to preview it locally. The 
