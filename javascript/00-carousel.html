@@ -14,36 +14,38 @@ sublinks: ["#examples|Examples",
             "#dataapi|Data API"]
 ---
 <article id="normalize">
-    <h1>Carousel</h1>
-    <p>A jQuery plugin that creates a carousel for cycling through elements. Uses CSS transitions to perform the animation.</p>
+    <h1>Carrossel</h1>
+    <p>Um plugin que cria um plugin com jQuery que cria um carrossel para circular através de elementos. Usa transições de CSS para executar a animação.</p>
     <p>
-        The carousel comes in two modes: Slide and Fade, both animated via CSS3 transitions. On browsers that do not support transitions they
-        simply change without special effects.
+	O carrossel vem em dois modos: com deslizamento ("slides") ou com desvanecimento ("fade"), ambos animados por meio de transições de CSS3.
+	Em navegadores que não suportam transições, eles irão simplesmente mudar sem nenhum efeito especial.
     </p>
     <p>
+	
+	É possível rodar os plugins sem escrever uma linha sequer de JavaScript, pois todos os plugins vêm com uma marcação para a interface de programação de aplicação (API) voltada para a atribuição de dados.
+	Essa é API do Responsive de primeira classe, e deveria ser a primeira a ser considerada quando usando os plugins.
         Comes with a markup API that allows running the plugin without writing a single line of JavaScript.
         This is Responsive's first class API and should be your first consideration when using a plugin.
     </p>
     <div class="alert" role="alert">
-        <h4>Accessibility</h4>
-        <p>The carousel, by default, will not transition automatically. This makes it less confusing for screenreaders to follow.</p>
+        <h4>Acessibilidade</h4>
+        <p>O carrossel, por padrão, não fazer transições automaticamente. Isso faz com que leitores de tela tenham menos problemas ao acompanhar a página.</p>
         <p>
-            On devices that support touch, the carousel will iterate though the item collection via swiping either left or right.
-            Keyboard support can also be utilised to navigate when the carousel is in focus by using the <kbd>LEFT</kbd>, and <kbd>RIGHT</kbd> keys.
+	    Em dispositivos que suportam toque, o carrossel irá iterar através da coleção de itens arrastando para a esquerda ou para a direita.
+	    Também ser utilizado o suporte ao teclado para navegar, quando o carrossel estiver em foco, usando as teclas para a <kbd>ESQUERDA</kbd> e para a <kbd>DIREITA</kbd>.
         </p>
 
-        <h4>Right-to-Left Language Support</h4>
+        <h4>Suporte a escritas da direita para a esquerda</h4>
         <p>
-            Adding the attribute <code>dir="rtl"</code> to the <code>html</code> tag will reverse the order of carousel items and all other
-            input behaviour will be reversed.
+	    Adicionando o atributo <code>dir="rtl"</code> a tag <code>html</code> irá inverter a ordem dos itens do carrossel e todos os outros comportamentos de inserção serão invertidos.
         </p>
     </div>
     <hr />
     <section id="examples">
-        <h1>Examples</h1>
+        <h1>Exemplos</h1>
         <div class="row">
             <div class="col-s-6">
-                <h2>Slide Mode</h2>
+                <h2>Modo de deslizamento</h2>
                 <div id="carousel-1" class="carousel">
                     <ol>
                         <li></li>
@@ -53,21 +55,21 @@ sublinks: ["#examples|Examples",
                     <figure class="carousel-active">
                         <img src="../../assets/img/hydrangeas.jpg" alt="hydrangeas">
                         <figcaption>
-                            <h4>First Thumbnail label</h4>
+                            <h4>Legenda da primeira miniatura</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="../../assets/img/chrysanthemum.jpg" alt="chrysanthemum">
                         <figcaption>
-                            <h4>Second Thumbnail label</h4>
+                            <h4>Legenda da segunda miniatura</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="../../assets/img/desert.jpg" alt="desert">
                         <figcaption>
-                            <h4>Third Thumbnail label</h4>
+                            <h4>Legenda da terceira miniatura</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                         </figcaption>
                     </figure>
@@ -77,7 +79,7 @@ sublinks: ["#examples|Examples",
                 </div>
             </div>
             <div class="col-s-6">
-                <h2>Fade Mode</h2>
+                <h2>Modo de desvanecimento</h2>
                 <div id="carousel-2" class="carousel" data-carousel-mode="fade">
                     <ol>
                         <li></li>
@@ -87,21 +89,21 @@ sublinks: ["#examples|Examples",
                     <figure class="carousel-active">
                         <img src="../../assets/img/hydrangeas.jpg" alt="hydrangeas">
                         <figcaption>
-                            <h4>First Thumbnail label</h4>
+                            <h4>Legenda da primeira miniatura</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="../../assets/img/chrysanthemum.jpg" alt="chrysanthemum">
                         <figcaption>
-                            <h4>Second Thumbnail label</h4>
+                            <h4>Legenda da segunda miniatura</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                         </figcaption>
                     </figure>
                     <figure>
                         <img src="../../assets/img/desert.jpg" alt="desert">
                         <figcaption>
-                            <h4>Third Thumbnail label</h4>
+                            <h4>Legenda da terceira miniatura</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                         </figcaption>
                     </figure>
@@ -114,9 +116,9 @@ sublinks: ["#examples|Examples",
     </section>
     <hr />
     <div class="alert" role="alert">
-        <h4>Heads Up!</h4>
+        <h4>Atenção!</h4>
         <p>
-            Replace image <code>src</code> attributes with <code>data-src</code> to allow lazy loading of images.
+            Substitua os atributos <code>src</code>  de imagens com <code>data-src</code> para permitir que as imagens sejam carregadas apenas quando necessário (lazy loading images).
         </p>
     </div>
     <section id="markup">
