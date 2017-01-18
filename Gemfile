@@ -3,7 +3,7 @@ gem 'jekyll', '3.3.1'
 gem 'github-pages', '112'
 gem 'addressable', '2.5.0'
 gem 'public_suffix'
-gem 'json', '>= 1.7.7', '~> 1.7'
+gem 'json', '>1.8.3'
 gem 'colorator', '1.1.0'
 
 require 'rbconfig'
