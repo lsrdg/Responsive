@@ -124,115 +124,115 @@ sublinks: ["#examples|Examples",
     <section id="markup">
         <h1>Markup</h1>
         <pre class="language-markup"><code>&lt;div id="carousel-2" class="carousel" data-carousel-mode="fade"&gt;
-    &lt;!-- Carousel Indicators--&gt;
+    &lt;!-- Indicadores do Carousel--&gt;
     &lt;ol&gt;
         &lt;li&gt;&lt;/li&gt;
         &lt;li&gt;&lt;/li&gt;
         &lt;li&gt;&lt;/li&gt;
     &lt;/ol&gt;
-    &lt;!-- Carousel Items--&gt;
+    &lt;!-- Items do Carousel--&gt;
     &lt;figure class="carousel-active"&gt;
         &lt;img src="../../test-assets/img/hydrangeas.jpg" alt="hydrangeas"&gt;
         &lt;figcaption&gt;
-            &lt;h4&gt;First Thumbnail label&lt;/h4&gt;
+            &lt;h4&gt;Legenda da primeira miniatura&lt;/h4&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur ...&lt;/p&gt;
         &lt;/figcaption&gt;
     &lt;/figure&gt;
     &lt;figure&gt;
         &lt;img src="../../test-assets/img/chrysanthemum.jpg" alt="chrysanthemum"&gt;
         &lt;figcaption&gt;
-            &lt;h4&gt;Second Thumbnail label&lt;/h4&gt;
+            &lt;h4&gt;Legenda da segunda miniatura&lt;/h4&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur ...&lt;/p&gt;
         &lt;/figcaption&gt;
     &lt;/figure&gt;
     &lt;figure&gt;
         &lt;img src="../../test-assets/img/desert.jpg" alt="desert"&gt;
         &lt;figcaption&gt;
-            &lt;h4&gt;Third Thumbnail label&lt;/h4&gt;
+            &lt;h4&gt;Legenda da terceira miniatura&lt;/h4&gt;
             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur ...&lt;/p&gt;
         &lt;/figcaption&gt;
     &lt;/figure&gt;
-    &lt;!-- Carousel Controls--&gt;
+    &lt;!-- Controles do Carousel--&gt;
     &lt;button&gt;&lt;&lt;/button&gt;
     &lt;button class="forward"&gt;&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
     </section>
     <hr />
     <section id="methods">
-        <h1>Methods</h1>
-        <p>The carousel exposes the following method signatures.</p>
+        <h1>Métodos</h1>
+        <p>O Carousel expões as seguintes assinaturas de métodos ("method signatures").</p>
         <dl>
-            <dt><strong>.carousel(options)</strong>  </dt>
+            <dt><strong>.carousel(opções)</strong>  </dt>
             <dd>
-                Initialises the plugin with an optional options <code>object</code>
+		Inicia o plugin com um <code>object</code> de opção opcional.
 
                 <table data-table-list class="table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th scope="col">Name</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                            <th>Default Value</th>
+                            <th scope="col">Nome</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                            <th>Valor padrão</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">mode</th>
-                            <td>string</td>
-                            <td>A string containing either the values <var>fade</var> or <var>slide</var>.</td>
+                            <td>cadeia de caracteres ("string")</td>
+                            <td>A cadeia de caracteres containing either the values <var>fade</var> or <var>slide</var>.</td>
                             <td><var>slide</var></td>
                         </tr>
                         <tr>
                             <th scope="row">interval</th>
-                            <td>number</td>
+                            <td>número</td>
                             <td>The time in milliseconds between carousel transitions.</td>
                             <td><var>0</var> (Better for accessibility)</td>
                         </tr>
                         <tr>
                             <th scope="row">pause</th>
-                            <td>string</td>
+                            <td>cadeia de caracteres</td>
                             <td>The event to bind the pause behaviour to</td>
                             <td><var>hover</var></td>
                         </tr>
                         <tr>
                             <th scope="row">wrap</th>
-                            <td>boolean</td>
+                            <td>booleano</td>
                             <td>Whether the carousel items should wrap</td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">keyboard</th>
-                            <td>boolean</td>
+                            <td>booleano</td>
                             <td>Whether the carousel responds to keyboard events</td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">touch</th>
-                            <td>boolean</td>
+                            <td>booleano</td>
                             <td>Whether the carousel responds to touch events</td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">lazyLoadImages</th>
-                            <td>boolean</td>
+                            <td>booleano</td>
                             <td>Whether to lazily load any images on page load.</td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">lazyOnDemand</th>
-                            <td>boolean</td>
+                            <td>booleano</td>
                             <td>Whether to lazily load any images on demand when sliding. Overwrites <var>lazyLoadImages</var></td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">nextTrigger</th>
-                            <td>string</td>
+                            <td>cadeia de caracteres</td>
                             <td>A jQuery selector to define any external element to trigger the <code>next()</code> method.</td>
                             <td><var>null</var></td>
                         </tr>
                         <tr>
                             <th scope="row">nextHint</th>
-                            <td>string</td>
+                            <td>cadeia de caracteres</td>
                             <td>
                                 A hidden html value that is added to the next trigger for accessibility purposes. The default language direction indicator is reversed by
                                 setting the <code>dir="rtl"</code> attribute on the <code>html</code> element.
@@ -241,13 +241,13 @@ sublinks: ["#examples|Examples",
                         </tr>
                         <tr>
                             <th scope="row">previousTrigger</th>
-                            <td>string</td>
+                            <td>cadeia de caracteres</td>
                             <td>A jQuery selector to define any external element to trigger the <code>prev()</code> method.</td>
                             <td><var>null</var></td>
                         </tr>
                         <tr>
                             <th scope="row">previousHint</th>
-                            <td>string</td>
+                            <td>cadeia de caracteres</td>
                             <td>
                                 A hidden html value that is added to the previous trigger for accessibility purposes. The default language direction indicator is reversed by
                                 setting the <code>dir="rtl"</code> attribute on the <code>html</code> element.
@@ -256,7 +256,7 @@ sublinks: ["#examples|Examples",
                         </tr>
                         <tr>
                             <th scope="row">indicators</th>
-                            <td>string</td>
+                            <td>cadeia de caracteres</td>
                             <td>A jQuery selector to define any external indicators <code>&lt;ol/&gt;</code> that highlight the carousels current position</td>
                             <td><var>null</var></td>
                         </tr>
