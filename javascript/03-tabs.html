@@ -77,19 +77,19 @@ sublinks: ["#examples|Examples",
         </p>
         <pre class="language-markup"><code>&lt;div class="tabs" data-tabs&gt;
     &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tab1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#" aria-selected="true"&gt;tab2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tab3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;aba1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" aria-selected="true"&gt;aba2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;aba3&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;</code></pre>
     </section>
     <hr />
     <section id="markup">
-        <h1>Markup</h1>
+        <h1>Marcação</h1>
         <pre class="language-markup"><code>&lt;div class="tabs" data-tabs&gt;
     &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tab1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tab2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;tab3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;aba1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;aba2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;aba3&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;section&gt;...&lt;/section&gt;
     &lt;section&gt;...&lt;/section&gt;
@@ -98,49 +98,48 @@ sublinks: ["#examples|Examples",
     </section>
     <hr />
     <section id="methods">
-        <h1>Methods</h1>
-        <p>The tabs plugin exposes the following method signatures.</p>
+        <h1>Métodos</h1>
+        <p>O plugin de abas apresenta os seguintes métodos de assinatura.</p>
         <dl>
             <dt><strong>.tabs(index)</strong>  </dt>
             <dd>
-                Initialises the plugin with an optional
-                <var>index</var>
-                parameter. A zero based indicator for which tab to show.
+                Inicializa o plugin com um parâmentro opicional de 
+                <var>index</var>,
+                (índice). Um indicador baseado em zero para definir qual aba mostrar.
             </dd>
         </dl>
     </section>
     <hr />
     <section id="events">
-        <h1>Events</h1>
-        <p>The tabs plugin exposes the following events allowing the developer to tap into its behaviour.</p>
+        <h1>Eventos</h1>
+        <p>O plugin de abas apresenta os seguintes eventos para permitir que o desenvolvedor mexa em seu comportamento.</p>
         <dl>
             <dt><strong>show.r.tabs</strong></dt>
-            <dd>This event is fired immediately when the plugins <code>show</code> instance method is invoked.</dd>
+            <dd>Esse evento é iniciado automaticamente assim que a instância do método <code>show</code> é invocada.</dd>
             <dt><strong>shown.r.tabs</strong></dt>
             <dd>
-                This event is fired when the plugins <code>shown</code> instance method is invoked once the tab has completed the
-                animation and the new pane is visible.
+                Evento que é inicializado quando a instância do método <code>shown</code> é invocada, uma vez que a aba tenha completado sua animação e o novo painél está visível.
             </dd>
         </dl>
-        <p>Binding to these events is as follows:</p>
-        <pre class="language-javascript"><code>// Bind to the show event.
-$("YOUR_SELECTOR").on("show.r.tabs", function(event) {
-    // Your custom behaviour...
+        <p>A conexão com esses é eventos é demonstrada abaixo:</p>
+        <pre class="language-javascript"><code>// Conectando ao evento "show".
+$("O_SEU_SELETOR").on("show.r.tabs", function(evento) {
+    // Seu comportamento customizado...
 });
                                                
-// Bind to the shown event.
-$("YOUR_SELECTOR").on("shown.r.tabs", function(event) {
-    // Your custom behaviour...
+// Conectando ao evento "shown".
+$("O_SEU_SELETOR").on("shown.r.tabs", function(evento) {
+    // Seu comportamento customizado...
 });</code></pre>
     </section>
     <hr />
     <section id="dataapi">
-        <h1>Data API</h1>
+        <h1>API de dados</h1>
         <p>
-            The tabs plugin's default behaviour is bound using a markup API that allows running the plugin without writing a single line of JavaScript.
-            If you need to disable this behaviour the following code will allow you to do so.
+	    O comportamento padrão do plugin de abas é limitado pelo uso de uma API de marcação, que permite rodar o plugin sem precisar escrever uma linha sequer de JavaScript.
+	    Caso você precise desativar esse comportamento, o código abaixo irá lhe permitir atingir isso.
         </p>
-        <pre class="language-javascript"><code>// Disable the default loading behaviour
+        <pre class="language-javascript"><code>// Desativar o carregamento do comportamento padrão
 $(document).off(".r.tabs.data-api");</code></pre>
     </section>
 </section>
