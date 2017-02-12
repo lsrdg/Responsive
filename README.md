@@ -43,11 +43,11 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | alerts                    | alertas           |   X   |
 | code                      | codigo            |   X   |
 | JavaScript/               | javascript        |   o   |
-| index.html                | index.html        |   -   |
-| carousel                  | carrossel         |   -   |
-| modal                     | modal             |   -   |
+| index.html                | index.html        |   X   |
+| carousel                  | carrossel         |   o   |
+| modal                     | modal             |   o   |
 | dropdown                  | menususpenso      |   -   |
-| tabs                      | abas              |   -   |
+| tabs                      | abas              |   X   |
 | autosize                  | redimensionamento |   -   |
 | dismiss                   | dispersar         |   -   |
 | tablelist                 | listadetabela     |   -   |
