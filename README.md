@@ -48,7 +48,7 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | modal                     | modal             |   o   |
 | dropdown                  | menususpenso      |   -   |
 | tabs                      | abas              |   X   |
-| autosize                  | redimensionamento |   -   |
+| autosize                  | redimensionamento |   X   |
 | dismiss                   | dispersar         |   -   |
 | tablelist                 | listadetabela     |   -   |
 | conditional               | condicional       |   -   |
