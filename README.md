@@ -49,7 +49,7 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | dropdown                  | menususpenso      |   -   |
 | tabs                      | abas              |   X   |
 | autosize                  | redimensionamento |   X   |
-| dismiss                   | dispersar         |   -   |
+| dismiss                   | dispersar         |   X   |
 | tablelist                 | listadetabela     |   -   |
 | conditional               | condicional       |   -   |
 | navigation                | navegacao         |   -   |
