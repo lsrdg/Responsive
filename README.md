@@ -50,7 +50,7 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | tabs                      | abas              |   X   |
 | autosize                  | redimensionamento |   X   |
 | dismiss                   | dispersar         |   X   |
-| tablelist                 | listadetabela     |   -   |
+| tablelist                 | listadetabela     |   X   |
 | conditional               | condicional       |   -   |
 | navigation                | navegacao         |   -   |
 | extras                    | extras            |   -   |
