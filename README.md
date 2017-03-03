@@ -51,7 +51,7 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | autosize                  | redimensionamento |   X   |
 | dismiss                   | dispersar         |   X   |
 | tablelist                 | listadetabela     |   X   |
-| conditional               | condicional       |   o   |
+| conditional               | condicional       |   X   |
 | navigation                | navegacao         |   -   |
 | extras                    | extras            |   -   |
 |-------------------------------------------------------|
