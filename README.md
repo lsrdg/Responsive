@@ -51,11 +51,11 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | autosize                  | redimensionamento |   X   |
 | dismiss                   | dispersar         |   X   |
 | tablelist                 | listadetabela     |   X   |
-| conditional               | condicional       |   -   |
+| conditional               | condicional       |   o   |
 | navigation                | navegacao         |   -   |
 | extras                    | extras            |   -   |
 |-------------------------------------------------------|
-| X = done      |    o = ongoing     | - = waiting list |
+| x = done      |    o = ongoing     | - = waiting list |
 
 ### Preview with Jekyll Server
 It might be necessary to prepend `bundle exec` to preview it locally. The 
