@@ -102,58 +102,58 @@ sublinks: ["#examples|Examples",
         <dl>
             <dt><strong>load.r.conditional</strong></dt>
             <dd>
-                This event is fired when the plugins <code>resize</code> instance method is invoked and content is about to be loaded.
+                Este evento é ativado quando a instância <code>resize</code> do método é invocada e o conteúdo está prestes a ser carregado.
             </dd>
             <dt><strong>loaded.r.conditional</strong></dt>
             <dd>
-                This event is fired when the plugins <code>resize</code> instance method is invoked and content is loaded.
-                The event data contains three custom properties:
+		
+                Este evento é ativado quando a instância <code>resize</code> do método é invocada e o conteúdo está carregado.
+                O evento de dado contém três propriedades personalizadas:
                 <dl>
                     <dt><strong>relatedTarget</strong></dt>
-                    <dd>The containing element that the plugin is bound to.</dd>
+                    <dd>O elemento que contém o plugin, e ao qual o plugin está limitado.</dd>
                     <dt><strong>loadtarget</strong></dt>
-                    <dd>The url to the target html to load.</dd>
+                    <dd>O url ao alvo de html a ser carregado.</dd>
                     <dt><strong>grid</strong></dt>
-                    <dd>The current grid range in which the event is firing. <var>xs</var>, <var>s</var>, <var>m</var>, or <var>l</var></dd>
+                    <dd>O alcance da grelha atual, na qual o evento está sendo ativado. <var>xs</var>, <var>s</var>, <var>m</var>, or <var>l</var></dd>
                 </dl>
             </dd>
             <dt><strong>error.r.conditional</strong></dt>
             <dd>
-                This event is fired when the plugin encounters an error when attempting to load ajax content.
-                The event data contains three custom properties:
+		Este evento é ativado quando o plugin encontra um erro ao tentar carregar conteúdo em ajax.
+		O evento de dado contém três propriedades personalizadas:
                 <dl>
                     <dt><strong>relatedTarget</strong></dt>
-                    <dd>The containing element that the plugin is bound to.</dd>
+                    <dd>O elemento que contém o plugin, e ao qual o plugin está limitado.</dd>
                     <dt><strong>loadtarget</strong></dt>
-                    <dd>The url to the target html to load.</dd>
+                    <dd>O url ao alvo de html a ser carregado.</dd>
                     <dt><strong>grid</strong></dt>
-                    <dd>The current grid range in which the event is firing. <var>xs</var>, <var>s</var>, <var>m</var>, or <var>l</var></dd>
+                    <dd>O alcance da grelha atual, na qual o evento está sendo ativado. <var>xs</var>, <var>s</var>, <var>m</var>, or <var>l</var></dd>
                 </dl>
             </dd>
         </dl>
-        <p>Binding to these events is as follows:</p>
-        <pre class="language-javascript"><code>// Bind to the load event.
-$("YOUR_SELECTOR").on("load.r.conditional", function(event) {
-    // Your custom behaviour...
+        <p>A conexão a esses eventos é feita da seguinte maneira:</p>
+        <pre class="language-javascript"><code>// Conectar ao evento 'load'. 
+	$("SEU_SELETOR").on("load.r.conditional", function(event) {
+    // Seu comportamento personalizado...
 });
 
-// Bind to the loaded event.
-$("YOUR_SELECTOR").on("loaded.r.conditional", function(event) {
-    // Your custom behaviour...
+// Conectar ao evento 'loaded'.
+$("SEU_SELETOR").on("loaded.r.conditional", function(event) {
+    // Seu comportamento personalizado...
 });
                                                
-// Bind to the error event.
-$("YOUR_SELECTOR").on("error.r.conditional", function(event) {
-    // Your custom behaviour...
-});</code></pre>
-    </section>
+// Conectar ao evento 'error'.
+$("SEU_SELETOR").on("error.r.conditional", function(event) {
+    // Seu comportamento personalizado...
+});</code></pre> </section>
     <hr />
     <section id="dataapi">
-        <h1>Data API</h1>
+        <h1>API de dados</h1>
         <p>
-            The conditional's default behaviour is bound using a markup API that allows running the plugin without writing a single line of JavaScript.
-            If you need to disable this behaviour the following code will allow you to do so.
+	    O comportamento padrão do plugin Conditional é limitado pelo uso da API de marcação que permite rodar o plugin sem precisar escrever uma linha sequer de JavaScript.
+	    O seguinte código irá lhe auxiliar caso precise desativar esse comportamento.
         </p>
-        <pre class="language-javascript"><code>// Disable the default loading behaviour
+        <pre class="language-javascript"><code>// Desativar o comportamento de carregamento padrão
 $(document).off(".r.conditional.data-api");</code></pre></section>
 </section>
