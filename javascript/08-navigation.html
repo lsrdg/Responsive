@@ -27,29 +27,30 @@ sublinks: ["#examples|Examples",
     </p>
 
     <div class="alert" role="alert">
-        <h4>Accessibility</h4>
+        <h4>Acessibilidade</h4>
         <p>
-            On initialisation a clone of the navigation landmarks is placed, hidden at the bottom of the page to ensure
-            that the landmarks from the landmarks list dialog are registered and accessible. The appropriate
-            roles and aria attributes are also added to the button and navigation elements.
+	    Na inicialização um clone dos marcadores da navegação são colocados, escondidos no fim da página, tudo para
+	    assegurar que os marcadores ("landmarks") da lista de diálogo dos marcadores seja registrada e acessível.
+	    Os papéis apropriados e os atributos Aria também são adicionados ao botão e aos elementos de navegação.
         </p>
         <p>
-            When open pressing <kbd>tab</kbd> or will focus elements within the menu only <kbd>shift + tab</kbd> Will allow you to exit from the top.
-            Pressing <kbd>esc</kbd> will close the menu.
+	    Quando aberto pressionando <kbd>tab</kbd> ou se for focar em elementos apenas dentro do menu, <kbd>shift + 
+		tab</kbd> irá permitir que você saia para o topo.
+            Pressionar  <kbd>esc</kbd> irá fechar o menu.
         </p>
-        <h4>Right-to-Left Language Support</h4>
+        <h4>Suporte à escritas da direita para a esquerda</h4>
         <p>
-            Adding the attribute <code>dir="rtl"</code> to the <code>html</code> tag will reverse the position of the navigation.
+            Adicionar o atributo  <code>dir="rtl"</code> a tag <code>html</code> irá inverter a posição da navegação.
         </p>
     </div>
     <hr />
     <section id="examples">
-        <h1>Examples</h1>
-        <p>This website uses the navigation plugin as its main navigation.</p>
+        <h1>Exemplos</h1>
+        <p>Esta página usa o plugin de Navegação como como sua principal forma de navegação.</p>
     </section>
     <hr />
     <section id="markup">
-        <h1>Markup</h1>
+        <h1>Marcação</h1>
         <pre class="language-markup"><code>&lt;nav data-navigation&gt; 
     &lt;button&gt;Menu&lt;/button&gt; 
     &lt;ul&gt;&lt;li&gt;&lt;a href="LINK_1_URL"&gt;Link 1&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt; 
@@ -57,58 +58,58 @@ sublinks: ["#examples|Examples",
     </section>
     <hr />
     <section id="methods">
-        <h1>Methods</h1>
-        <p>The navigation plugin exposes the following method signatures.</p>
+        <h1>Métodos</h1>
+        <p>O plugin Navigation apresenta os seguintes métodos de assinatura.</p>
         <dl>
             <dt><strong>.navigation()</strong></dt>
-            <dd>Initialises the plugin.</dd>
+            <dd>Inicializa o plugin.</dd>
             <dt><strong>.navigation("show")</strong></dt>
-            <dd>Show the navigation.</dd>
+            <dd>Mostra a navegação.</dd>
             <dt><strong>.navigation("hide")</strong></dt>
-            <dd>Hide the navigation.</dd>
+            <dd>Esconde a navegação.</dd>
         </dl>
     </section>
     <hr />
     <section id="events">
-        <h1>Events</h1>
-        <p>The navigation plugin exposes the following events allowing the developer to tap into its behaviour.</p>
+        <h1>Eventos</h1>
+        <p>O plugin Navigation apresenta os seguintes eventos para permitir que o desenvolvedor altere o seu comportamento.</p>
         <dl>
             <dt><strong>show.r.navigation</strong></dt>
-            <dd>This event is fired immediately when the plugins <code>show</code> instance method is invoked.</dd>
+            <dd>Este evento é ativado imediatamente quando a instância de método <code>show</code> do plugin é invocada.</dd>
             <dt><strong>shown.r.navigation</strong></dt>
-            <dd>This event is fired when the plugins <code>shown</code> instance method is invoked once the target has completed the animation and is shown.</dd>
+            <dd>Este evento é ativado imediatamente quando a instância de método <code>shown</code> do plugin é invocada, o uma vez que o alvo tenha completado a animação e tenha sido mostrado.</dd>
             <dt><strong>hide.r.navigation</strong></dt>
-            <dd>This event is fired immediately when the plugins <code>hide</code> instance method is invoked.</dd>
+            <dd>Este evento é ativado imediatamente quando a instância de método <code>hide</code> plugin tenha sido invocada.</dd>
             <dt><strong>hidden.r.navigation</strong></dt>
-            <dd>This event is fired when the plugins <code>hidden</code> instance method is invoked once the target has completed the animation and is hidden.</dd>
+            <dd>Este evento é ativado imediatamente quando a instância de método <code>hidden</code> tenha sido invocada, uma vez que o alvo tenha completado a animação e esteja escondido.</dd>
         </dl>
-        <p>Binding to these events is as follows:</p>
-        <pre class="language-javascript"><code>// Bind to the show event.
-$("YOUR_SELECTOR").on("show.r.navigation", function(event) {
-    // Your custom behaviour...
+        <p>A conexão a esses eventos é feita da seguinte maneira:</p>
+        <pre class="language-javascript"><code>// Conectar ao evento 'show'.
+$("O_SEU_SELETOR").on("show.r.navigation", function(event) {
+    // O seu comportamento personalizado...
 });
                                                
-// Bind to the shown event.
-$("YOUR_SELECTOR").on("shown.r.navigation", function(event) {
-    // Your custom behaviour...
+// Conectar ao evento 'shown'.
+$("O_SEU_SELETOR").on("shown.r.navigation", function(event) {
+    // O seu comportamento personalizado...
 });
-// Bind to the hide event.
-$("YOUR_SELECTOR").on("hide.r.navigation", function(event) {
-    // Your custom behaviour...
+// Conectar ao evento 'hide'.
+$("O_SEU_SELETOR").on("hide.r.navigation", function(event) {
+    // O seu comportamento personalizado...
 });
-// Bind to the hidden event.
-$("YOUR_SELECTOR").on("hidden.r.navigation", function(event) {
-    // Your custom behaviour...
+// Conectar ao evento 'hidden'.
+$("O_SEU_SELETOR").on("hidden.r.navigation", function(event) {
+    // O seu comportamento personalizado...
 });</code></pre>
     </section>
     <hr />
     <section id="dataapi">
-        <h1>Data API</h1>
+        <h1>API de dados </h1>
         <p>
-            The navigation plugin's default behaviour is bound using a markup API that allows running the plugin without writing a single line of JavaScript.
-            If you need to override this behaviour the following code will allow you to do so.
+	    O comportamento padrão do plugin Navigation é limitado pelo uso de uma API de marcação que permite rodar o plugin sem precisar escrever uma linha sequer de JavaScript.
+	    O seguinte código irá lhe permitir sobreescrever esse comportamento caso seja necessário.
         </p>
-        <pre class="language-javascript"><code>// Disable the default loading behaviour
+        <pre class="language-javascript"><code>// Desativar o carregamento do comportamento padrão
 $(document).off(".r.navigation.data-api");</code></pre>
     </section>
 </section>

@@ -52,8 +52,8 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | dismiss                   | dispersar         |   X   |
 | tablelist                 | listadetabela     |   X   |
 | conditional               | condicional       |   X   |
-| navigation                | navegacao         |   -   |
-| extras                    | extras            |   -   |
+| navigation                | navegacao         |   X   |
+| extras                    | extras            |   o   |
 |-------------------------------------------------------|
 | x = done      |    o = ongoing     | - = waiting list |
 
