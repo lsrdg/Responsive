@@ -11,45 +11,45 @@ sublinks: ["#general|General Tools",
            "#transition|Transition Tools",
            "#touch|Touch Tools"]
 ---
-<h1>Overview</h1>
+<h1>Visão geral</h1>
 <p>
-    Responsive utilizes several advanced techniques in order to provide a true cross browser experience.
-    Within the core these are exposed via jQuery to all the plugins and to all developers allowing them to expand
-    upon the framework.
+    O Responsive faz uso de várias técnicas avançadas a fim de prover uma experiência que realmente seja independente 
+    do navegador.
+    Dentro do núcleo, elas são apresentadas por meio de jQuery para todos os plugins e para todos desenvolvedores,
+    permitindo que possam expandir em cima da biblioteca.
 </p>
 <section id="general">
-    <h1>General Tools</h1>
-    <p>The following tools are used for the general running of the framework.</p>
+    <h1>Ferramentas gerais</h1>
+    <p>As seguintes ferramentas são usadas para que a biblioteca rode normalmente.</p>
     <dl>
         <dt><strong>$.pseudoUnique(length)</strong></dt>
-        <dd>Returns a pseudo unique alpha-numeric string of the given length. Defaults to 8 which gives a very low collision rate.</dd>
+        <dd>Retorna uma linha que é pseudo-única e alfa-numérica do comprimento dado. Por padrão refere à 8, o que provem uma taxa de colisão muito baixa.</dd>
         <dt><strong>$.support.currentGrid()</strong></dt>
         <dd>
-            Returns an object indicating what grid range the current browser width is within.
+            Retorna um objeto indicando qual o alcance da largura na grelha em que a janela atual do navegador se encontra.
             <dl class="dl-horizontal">
                 <dt>grid</dt>
-                <dd>The current applied grid; either <var>xxs</var>, <var>xs</var>, <var>s</var>, <var>m</var>, or <var>l</var>.</dd>
+                <dd>A grelha que está em uso no momento; pode ser tanto <var>xxs</var>, <var>xs</var>, <var>s</var>, <var>m</var>, ou <var>l</var>.</dd>
                 <dt>index</dt>
-                <dd>The index of the current grid in the range. Zero based.</dd>
+                <dd>O índice da grelha atual em alcance. Baseado em zero.</dd>
                 <dt>range</dt>
-                <dd>An array containing the available grid range.</dd>
+                <dd>Uma matrix ("array") contendo o alcance de grelha disponível.</dd>
             </dl>
         </dd>
         <dt><strong>$.debounce()</strong></dt>
         <dd>
-            Creates and returns a new debounced version of the passed function which will postpone its execution until after wait
-            milliseconds have elapsed since the last time it was invoked.
+            Cria e retorna uma nova verão pulada ("debounced") da função que foi passada, o que irá postegar a sua execução até que os milisegundos tenham passado desde a última vez que ela foi invocada.
             <dl class="dl-horizontal">
                 <dt>function</dt>
-                <dd> The function to debounce.</dd>
+                <dd> A função a ser pulada.</dd>
                 <dt>wait</dt>
-                <dd>The number of milliseconds to delay.</dd>
+                <dd>A quantidade (o número) dos milisegundos para demorar.</dd>
                 <dt>immediate</dt>
-                <dd> Specify execution on the leading edge of the timeout.</dd>
+                <dd> Especificar a execução Specify execution on the leading edge of the timeout.</dd>
             </dl>
         </dd>
         <dt><code>:attrStart(value)</code> selector</dt>
-        <dd>This selector matches any target that contains an attribute starting with the given value.</dd>
+        <dd>Esse seletor encontra qualquer alvo que que contém um atributo começando com o valor fornecido.</dd>
         <dt><strong>$.buildDataOptions($elem, filter)</strong></dt>
         <dd>
             Creates an object containing options populated from an elements data attributes.
@@ -156,3 +156,4 @@ sublinks: ["#general|General Tools",
         </dd>
     </dl>
 </section>
+
