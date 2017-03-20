@@ -62,16 +62,15 @@ sublinks: ["#general|General Tools",
         </dd>
         <dt><strong>$.toggleBodyLock()</strong></dt>
         <dd>
-            Toggles a locked state on the body which toggles both scrollbar visibility and padding on the body.
-            The plugin exposes the following events that are bound to the <code>html</code> element.
+            Ativa um estado trancado no corpo ("body") o qual ativa tanto a visibilidade da barra de rolagem quanto padding no corpo.
+	    O plugin apresenta os seguintes eventos que são limitados ao elemento <code>html</code>.
             <dl class="dl-horizontal">
                 <dt><strong>lock.r.bodylock</strong></dt>
-                <dd>This event is fired immediately when the plugins <code>lock</code> instance method is invoked. 
-                    A <var>padding</var> property on the event carries any padded added to the body to take into
-                    account scrollbar width.
+                <dd>Este evento é ativado imediatamente quando a instância de método <code>lock</code> do plugin é invocada. 
+                    Uma proriedade <var>padding</var> no evento carrega qualquer "padding" adicionado ao "body" para que leve em consideração a largura da barra de rolagem.
                 </dd>
                 <dt><strong>unlock.r.bodylock</strong></dt>
-                <dd>This event is fired when the plugins <code>unlock</code> instance method is invoked.</dd>
+                <dd>Este evento é ativado quando a instância de método <code>unlock</code> do plugin é invocada.</dd>
             </dl>
         </dd>
     </dl>
