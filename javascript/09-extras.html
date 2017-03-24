@@ -77,20 +77,20 @@ sublinks: ["#general|General Tools",
 </section>
 <hr />
 <section id="transition">
-    <h1>Transition Tools</h1>
-    <p>The following methods aid with the management of CSS transitions.</p>
+    <h1>Ferramentas de transição</h1>
+    <p>Os seguintes métodos auxiliam com o gerenciamento de transições de CSS.</p>
     <dl>
         <dt><strong>$.support.transition</strong></dt>
-        <dd>Returns an object with a single property <code>.end</code> if the browser supports CSS transitions. Otherwise; false.</dd>
+        <dd>Retorna um objeto com uma única propriedade <code>.end</code> se o navegador suporta transições de CSS. Caso contrário; falso.</dd>
         <dt><strong>$(target).redraw()</strong></dt>
-        <dd>Forces the browser to repaint which will trigger a CSS transition.</dd>
+        <dd>Força o navegador a repintar o que por si irá ativar uma transição de CSS.</dd>
         <dt><strong>$(target).ensureTransitionEnd(duration)</strong></dt>
         <dd>
-            Ensures that the transition end callback is triggered after the given duration in milliseconds.
-            If no duration is set then it will attempt to work out the transition time using the elements style rules.
+	    Assegura que haja ligação ao fim da transição ativada após a duração fornecida em milésimos de segundos.
+            Se nenhuma duração for oferecida o método tentará dar um jeito no tempo de transição usando as regras de estilo do elemento.
         </dd>
         <dt><strong>$(target).onTransitionEnd(callback)</strong></dt>
-        <dd>Performs the given callback function at the end of a CSS transition.</dd>
+	<dd>Executa a chamada de uma função ao final ("callback") de uma transição de CSS.</dd>
     </dl>
 </section>
 <hr />
