@@ -95,23 +95,23 @@ sublinks: ["#general|General Tools",
 </section>
 <hr />
 <section id="touch">
-    <h1>Touch Tools</h1>
-    <p>The following methods aid with the management of touch detection and support.</p>
+    <h1>Ferramentas de toque ("touch")</h1>
+    <p>Os seguintes métodos auxiliam no gerenciamento de detecção e suporte para toque.</p>
     <dl>
         <dt><strong>$.support.touchEvents</strong></dt>
-        <dd>Returns true if the browser supports <a href="https://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">touch events</a>. Otherwise; false.</dd>
-        <dt><strong>$.support.pointerEvents</strong></dt>
-        <dd>Returns true if the browser supports <a href="https://dvcs.w3.org/hg/pointerevents/raw-file/tip/pointerEvents.html">pointer events</a>. Otherwise; false.</dd>
+        <dd>Retorna "true" se o navegador suportar <a href="https://dvcs.w3.org/hg/webevents/raw-file/v1/touchevents.html">eventos de toque</a>. Caso contrário; "false".</dd>
+        <dt><strong>$.support.pointerEvents</strong></dt>g
+        <dd>Retorna "true" se o navegador suportar <a href="https://dvcs.w3.org/hg/pointerevents/raw-file/tip/pointerEvents.html">eventos de apontamento</a> ("pointer events"). Caso contrário; "false".</dd>
         <dt><code>swipe</code> <strong>event</strong></dt>
         <dd>
             <p>
-                A <a href="http://learn.jquery.com/events/event-extensions/#special-event-hooks" rel="external nofollow">special event</a> that can be bound or
-                unbound to an target using jquery's <code>on()</code> and <code>off()</code> functions. This allows the element to register and respond to swipe actions.
+                Um <a href="http://learn.jquery.com/events/event-extensions/#special-event-hooks" rel="external nofollow">evento especial</a> que pode ser limitado ou ilimitado a um alvo 
+                usando as funções <code>on()</code> e <code>off()</> de jQuery. Isso permite que o elemento registre e responda à ações de deslizamento ("swipe").
             </p>
-            <p>The following data can be passed to handler in <code>event.data</code> when the event is triggered.</p>
+            <p>O seguinte dado pode ser passado para lidar com <code>event.data</code> quando o arquivo é ativado.</p>
             <dl>
                 <dt><strong>touchAction</strong></dt>
-                <dd>The touch action to respond to which restricts the direction that you can scroll within. <var>pan-x</var>, <var>pan-y</var>, or the default <var>none</var></dd>
+                <dd>A ação de toque à responder a qual restinge a direção dentro da qual você pode rolar. <var>pan-x</var>, <var>pan-y</var>, ou a padrão <var>none</var></dd>
                 <dt><strong>sensitivity</strong></dt>
                 <dd>Defined as a percentage of the target elements height or width. Defaults to <var>5</var>.</dd>
             </dl>
