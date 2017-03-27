@@ -53,7 +53,7 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | tablelist                 | listadetabela     |   X   |
 | conditional               | condicional       |   X   |
 | navigation                | navegacao         |   X   |
-| extras                    | extras            |   o   |
+| extras                    | extras            |   X   |
 |-------------------------------------------------------|
 | x = done      |    o = ongoing     | - = waiting list |
 
