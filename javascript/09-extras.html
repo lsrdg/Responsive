@@ -113,42 +113,42 @@ sublinks: ["#general|General Tools",
                 <dt><strong>touchAction</strong></dt>
                 <dd>A ação de toque à responder a qual restinge a direção dentro da qual você pode rolar. <var>pan-x</var>, <var>pan-y</var>, ou a padrão <var>none</var></dd>
                 <dt><strong>sensitivity</strong></dt>
-                <dd>Defined as a percentage of the target elements height or width. Defaults to <var>5</var>.</dd>
+                <dd>Definida como uma porcentagem da altura ou largura do elemento alvo. Por padrão é <var>5</var>.</dd>
             </dl>
-            <p>Once bound the element exposes the following events. These can be suffixed on initialization.</p>
+            <p>Uma vez conectado, o elemento irá expor os seguintes eventos. Eles podem ser sufixados na inicialização.</p>
             <dl>
                 <dt><strong>swipestart</strong></dt>
                 <dd>
-                    This event is fired immediately when a swipe instance is detected on pointer down. The event data contains three custom properties:
+                    Esse evento é ativado imediatamente quando uma instância de deslizamento é detectada com ponteiro abaixado. O evento contém 3 propriedades personalizadas:
                     <dl>
                         <dt><strong>x</strong></dt>
-                        <dd>The horizontal position in pixels within the current viewport.</dd>
+                        <dd>A posição horizontal em pixels dentro da janela de exibição atual.</dd>
                         <dt><strong>y</strong></dt>
-                        <dd>The vertical position in pixels within the current viewport.</dd>
+                        <dd>A posição vertical em pixels dentro da janela de exibição atual.</dd>
                         <dt><strong>time</strong></dt>
-                        <dd>The current <code>Date</code>.</dd>
+                        <dd>A data (<code>Date</code>) atual.</dd>
                     </dl>
                 </dd>
                 <dt><strong>swipemove</strong></dt>
                 <dd>
-                    This event is fired when the pointer is moved across the surface of the device. The event data contain the custom property <code>delta</code>:
+                    Esse evento é ativado quando o ponteiro é movido através da superfície do dispositivo. O dado do evento contém a propriedade <code>delta</code> personalizada:
                     <dl>
                         <dt><strong>x</strong></dt>
-                        <dd>The horizontal position in pixels within the current viewport.</dd>
+                        <dd>A posição horizontal em pixels dentro da janela de exibição atual.</dd>
                         <dt><strong>y</strong></dt>
-                        <dd>The vertical position in pixels within the current viewport.</dd>
+                        <dd>A posição vertical em pixels dentro da janela de exibição atual.</dd>
                     </dl>
                 </dd>
                 <dt><strong>swipeend</strong></dt>
                 <dd>
-                    This event is fired immediately when on pointer up or mouse leave. The event data contains three custom properties:
+                    Esse evento é ativado imediatamente quando o ponteiro está levantado ou o mouse sair. O dado do evento contém tres propriedades personalizadas:
                     <dl>
                         <dt><strong>delta</strong></dt>
-                        <dd>The horizontal and vertical position in pixels within the current viewport.</dd>
+                        <dd>A posição horizontal e vertical em pixels dentro da janela de exibição atual.</dd>
                         <dt><strong>direction</strong></dt>
-                        <dd>The direction of the swipe: <var>up, down, left, right</var>.</dd>
+                        <dd>A direção do deslizamento: <var>cima, baixo, esquerda, direita</var>.</dd>
                         <dt><strong>duration</strong></dt>
-                        <dd>The time in milliseconds between the beginning and end of a swipe action instance.</dd>
+                        <dd>O tempo em milésimos de segundos entre o começo e o final da instância de ação de deslizamento.</dd>
                     </dl>
                 </dd>
             </dl>
