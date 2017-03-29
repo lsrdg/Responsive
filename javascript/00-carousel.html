@@ -185,49 +185,49 @@ sublinks: ["#examples|Examples",
                         <tr>
                             <th scope="row">interval</th>
                             <td>número</td>
-                            <td>The time in milliseconds between carousel transitions.</td>
-                            <td><var>0</var> (Better for accessibility)</td>
+                            <td>O tempo em milésimos de segundos entre as transições do carrossel.</td>
+                            <td><var>0</var> (Melhor para a acessibilidade)</td>
                         </tr>
                         <tr>
                             <th scope="row">pause</th>
                             <td>cadeia de caracteres</td>
-                            <td>The event to bind the pause behaviour to</td>
+                            <td>O evento ao qual limitar o comportamento de pausa</td>
                             <td><var>hover</var></td>
                         </tr>
                         <tr>
                             <th scope="row">wrap</th>
                             <td>booleano</td>
-                            <td>Whether the carousel items should wrap</td>
+                            <td>Se os itens do carrossel devem ser enrolados ou não</td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">keyboard</th>
                             <td>booleano</td>
-                            <td>Whether the carousel responds to keyboard events</td>
+                            <td>Se o carrossel responde ou não a eventos de teclado</td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">touch</th>
                             <td>booleano</td>
-                            <td>Whether the carousel responds to touch events</td>
+                            <td>Se o carrossel responde ou não a eventos de toque</td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">lazyLoadImages</th>
                             <td>booleano</td>
-                            <td>Whether to lazily load any images on page load.</td>
+                            <td>Se alguma imagem deverá ser carregada com atraso ou não no carregamento da página</td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">lazyOnDemand</th>
                             <td>booleano</td>
-                            <td>Whether to lazily load any images on demand when sliding. Overwrites <var>lazyLoadImages</var></td>
+                            <td>Se imagens deverão ser carregadas com atraso ao deslizar. Sobreescreve <var>lazyLoadImages</var></td>
                             <td><var>true</var></td>
                         </tr>
                         <tr>
                             <th scope="row">nextTrigger</th>
                             <td>cadeia de caracteres</td>
-                            <td>A jQuery selector to define any external element to trigger the <code>next()</code> method.</td>
+                            <td>Um seletor de jQuery que define qualquer elemento externo para para ativar o metódo <code>next()</code>.</td>
                             <td><var>null</var></td>
                         </tr>
                         <tr>
@@ -257,69 +257,69 @@ sublinks: ["#examples|Examples",
                         <tr>
                             <th scope="row">indicators</th>
                             <td>cadeia de caracteres</td>
-                            <td>A jQuery selector to define any external indicators <code>&lt;ol/&gt;</code> that highlight the carousels current position</td>
+                            <td>Um seletor jQuery para definir qualquer indicador externo de <code>&lt;ol/&gt;</code> que realce a posição atual do carrossel</td>
                             <td><var>null</var></td>
                         </tr>
                     </tbody>
                 </table>
             </dd>
             <dt><strong>.carousel("cycle")</strong></dt>
-            <dd>Cycles through the carousel instance items in a logical order.</dd>
+            <dd>Circula pelos itens da instância do carrossel em um ordem lógica.</dd>
             <dt><strong>.carousel("pause")</strong></dt>
-            <dd>Triggers the pause event of the carousel instance stopping it cycling.</dd>
+            <dd>Ativa o evento de pausa da instância do carrossel fazendo com que a circulação pare.</dd>
             <dt><strong>.carousel("prev")</strong></dt>
-            <dd>Cycles the carousel instance to the previous item.</dd>
+            <dd>Faz com que a instância do carrossel circule ao item anterior.</dd>
             <dt><strong>.carousel("next")</strong></dt>
-            <dd>Cycles the carousel instance to the next item.</dd>
+            <dd>Faz com que a instância do carrossel circule para o próximo item.</dd>
             <dt><strong>.carousel(number)</strong></dt>
-            <dd>Cycles the carousel to a particular item with at the given index (zero based).</dd>
+            <dd>Faz com que o carrossel circule até um item em particular com um índica fornecido (baseado em zero).</dd>
         </dl>
     </section>
     <hr />
     <section id="events">
-        <h1>Events</h1>
-        <p>The carousel exposes the following events allowing the developer to tap into its behaviour.</p>
+        <h1>Eventos</h1>
+        <p>O carrossel apresenta os seguintes eventos, que permitem ao desenvolvedor manusear o seu comportamento.</p>
         <dl>
             <dt><strong>slide.r.carousel</strong></dt>
             <dd>
-                This event is fired immediately when the plugins <code>slide</code> instance method is invoked. The event data contains two custom properties:
+                Esse evento é ativado imediatamente quando a instância do método de deslizamento (<code>slide</code>) do plugin é invocada. O evento de dado contém duas propriedades personalizadas:
                 <dl>
                     <dt><strong>relatedTarget</strong></dt>
-                    <dd>The carousel item that will be next in the logical order.</dd>
+                    <dd>O item do carrossel que será o próximo na ordem lógica.</dd>
                     <dt><strong>direction</strong></dt>
-                    <dd>The direction in which the carousel is transitioning.</dd>
+                    <dd>A direção na qual o carrossel está transicionando.</dd>
                 </dl>
             </dd>
             <dt><strong>slid.r.carousel</strong></dt>
             <dd>
-                This event is fired when the plugins <code>slid</code> instance method is invoked once the carousel has completed sliding. The event data contains two custom properties:
+                Esse evento é ativado quando a instância do método <code>slid</code> do plugin é invocada quando o carrossel tiver completado o seu deslizamento. O evendo de dado contém duas propriedades personalizadas:
                 <dl>
                     <dt><strong>relatedTarget</strong></dt>
-                    <dd>The carousel item that will be next in the logical order.</dd>
+                    <dd>O item do carrossel que será o próximo na ordem lógica.</dd>
                     <dt><strong>direction</strong></dt>
-                    <dd>The direction in which the carousel is transitioning.</dd>
+                    <dd>A direção na qual o carrossel está transicionando.</dd>
                 </dl>
             </dd>
         </dl>
-        <p>Binding to these events is as follows:</p>
-        <pre class="language-javascript"><code>// Bind to the slide event.
-$("YOUR_SELECTOR").on("slide.r.carousel", function(event) {
-    // Your custom behaviour...
+        <p>A conexão a essses eventos é feita da seguinte maneira:</p>
+        <pre class="language-javascript"><code>// Conectar ao evento "slide".
+$("O_SEU_SELETOR").on("slide.r.carousel", function(event) {
+    // O seu comportamento personalizado...
 });
                                                
-// Bind to the slid event.
-$("YOUR_SELECTOR").on("slid.r.carousel", function(event) {
-    // Your custom behaviour...
+// Conectar ao evento "slid".
+$("O_SEU_SELETOR").on("slid.r.carousel", function(event) {
+    // O seu comportamento personalizado...
 });</code></pre>
     </section>
     <hr />
     <section id="dataapi">
-        <h1>Data API</h1>
+        <h1>API de dados</h1>
         <p>
-            The carousel's default behaviour is bound using a markup API that allows running the plugin without writing a single line of JavaScript.
-            If you need to disable this behaviour the following code will allow you to do so.
+	    O comportamento padrão do carrossel é limitado pelo uso da API de marcação que permite rodar o plugin sem precisar escrever uma linha sequer de JavaScript.
+	    Entretanto, caso seja necessário, o seguinte código irá lhe permitir desativar esse comportamento padrão.
         </p>
-        <pre class="language-javascript"><code>// Disable the default loading behaviour
+        <pre class="language-javascript"><code>// Desativar o comportamento de carregamento padrão
 $(document).off(".r.carousel.data-api");</code></pre>
     </section>
 </article>
