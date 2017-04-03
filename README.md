@@ -46,7 +46,7 @@ On the right, the name in Brazilian Portuguese, as you will eventually find on t
 | index.html                | index.html        |   X   |
 | carousel                  | carrossel         |   X   |
 | modal                     | modal             |   X   |
-| dropdown                  | menususpenso      |   -   |
+| dropdown                  | menususpenso      |   o   |
 | tabs                      | abas              |   X   |
 | autosize                  | redimensionamento |   X   |
 | dismiss                   | dispersar         |   X   |
