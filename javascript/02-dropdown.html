@@ -219,11 +219,11 @@ sublinks: ["#standard|Example : Standard",
     </section>
     <hr />
     <section id="markup">
-        <h1>Markup</h1>
+        <h1>Marcação</h1>
         <section>
-            <h3>Standard</h3>
+            <h3>Padrão</h3>
             <pre class="language-markup"><code>&lt;button data-dropdown-target="#collapse3" data-dropdown-dimension="width"&gt;
-    Click me to toggle
+    Aperte-me para ativar
 &lt;/button&gt;
 &lt;div id="collapse3" class="collapse width"&gt;
     &lt;div class="dropdown-width-example"&gt;
@@ -234,11 +234,11 @@ sublinks: ["#standard|Example : Standard",
 &lt;/div&gt;</code></pre>
         </section>
         <section>
-            <h3>Accordion</h3>
+            <h3>Acordeão</h3>
             <pre class="language-markup"><code>&lt;div class="accordion"&gt;
     &lt;div class="accordion-head"&gt;
         &lt;a data-dropdown-target="#cllps1" href="#"&gt;
-            Accordion Header Trigger                               
+            Gatilho do cabeçalho do acordeão
         &lt;/a&gt;
     &lt;/div&gt;
     &lt;div class="accordion-body" id="cllps1"&gt;
@@ -248,7 +248,7 @@ sublinks: ["#standard|Example : Standard",
     &lt;/div&gt;
     &lt;div class="accordion-head"&gt;
         &lt;a data-dropdown-target="#cllps2" href="#"&gt;
-            Accordion Header Trigger                               
+            Gatilho do cabeçalho do acordeão
         &lt;/a&gt;
     &lt;/div&gt;
     &lt;div class="accordion-body collapse" id="cllps2"&gt;
@@ -261,44 +261,44 @@ sublinks: ["#standard|Example : Standard",
     </section>
     <hr />
     <section id="methods">
-        <h1>Methods</h1>
-        <p>The dropdown exposes the following method signatures.</p>
+        <h1>Métodos</h1>
+        <p>O dropdown apresenta os seguintes métodos de assinaturas.</p>
         <dl>
             <dt><strong>.dropdown(options)</strong></dt>
             <dd>
-                Initialises the plugin with an optional options <code>object</code>
+                Inicializa o plugin com um objeto opcional de opções (<code>object</code>).
 
                 <table data-table-list class="table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th scope="col">Name</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                            <th>Default Value</th>
+                            <th scope="col">Nome</th>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                            <th>Valor padrão</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">target</th>
+                            <th scope="row">alvo</th>
                             <td>string</td>
-                            <td>A jQuery selector indicating what target to toggle the visibility of.</td>
+                            <td>Um seletor jQuery indicando de qual alvo a visibilidade será alterada.</td>
                             <td><var>null</var></td>
                         </tr>
                         <tr>
-                            <th scope="row">parent</th>
+                            <th scope="row">ascendente</th>
                             <td>string</td>
-                            <td>A jQuery selector indicating what parent of the dropdown trigger should force grouped mode.</td>
+                            <td>Um seletor jQuery indicando quan ascendente do gatilho do dropdown deverá força modo agrupado.</td>
                             <td><var>null</var></td>
                         </tr>
                     </tbody>
                 </table>
             </dd>
             <dt><strong>.dropdown("show")</strong></dt>
-            <dd>Shows a collapsed dropdown target.</dd>
+            <dd>Mostra um alvo de dropdown colapsado.</dd>
             <dt><strong>.dropdown("hide")</strong></dt>
-            <dd>Hides a collapsed dropdown target.</dd>
+            <dd>Esconde um alvo do dropdown que tenha sido colapsado.</dd>
             <dt><strong>.dropdown("toggle")</strong></dt>
-            <dd>Toggles the visibility of a collapsed dropdown target.</dd>
+            <dd>Ativar/desativa a visibilidade de um alvo do dropdown que tenha sido colapsado.</dd>
         </dl>
     </section>
     <hr />
