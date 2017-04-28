@@ -5,16 +5,15 @@
 ### UNOFFICIAL Portuguese translation
 The process is being splitted into three chunks:
 
-1) Raw translation
+- [X] Raw translation 
     - Literal and free translation
     
-2) Improvement 
+- [ ] Improvement 
+    - Proofreading
     - Context checking
     - Spell and grammar checking
-    - Proofreading
 
-3) Adaptation to the docs format        
-        
+- [ ] Adaptation to the docs format        
 
 See below the details.
 
@@ -22,7 +21,7 @@ See below the details.
 Contributions are really appreciated. This branch strives to follow the [guidelines for contributing to Responsive](https://github.com/lsrdg/Responsive/blob/master/CONTRIBUTING.md).
 Even if you don't speak Portuguese, your ideas and insights are welcomed.
 
-### 1) Raw translation
+### 1) Raw translation (DONE)
 On the left, the name in English, as you can find on the original repository.
 On the right, the name in Brazilian Portuguese, as you will eventually find on this branch (`pt`).
 
@@ -70,3 +69,5 @@ On this repository:
 - `pt` is the master branch
 - Modified Gemfile 
 - Still with mixed filenames [!]
+
+
